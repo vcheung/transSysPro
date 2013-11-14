@@ -195,7 +195,7 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>16</ColumnNumber>
+      <ColumnNumber>21</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>25</TopLine>
       <CurrentLine>25</CurrentLine>
@@ -2030,12 +2030,12 @@
       <Documents>
         <Doc>
           <Name>.\main.c</Name>
-          <ColumnNumber>16</ColumnNumber>
+          <ColumnNumber>21</ColumnNumber>
           <TopLine>25</TopLine>
           <CurrentLine>25</CurrentLine>
         </Doc>
         <Doc>
-          <Name>..\USER\stm32f10x_conf.h</Name>
+          <Name>F:\GitHub\transSysPro\stm32\USER\stm32f10x_conf.h</Name>
           <ColumnNumber>22</ColumnNumber>
           <TopLine>34</TopLine>
           <CurrentLine>48</CurrentLine>
@@ -2047,13 +2047,13 @@
           <CurrentLine>52</CurrentLine>
         </Doc>
         <Doc>
-          <Name>usart1.h</Name>
+          <Name>F:\GitHub\transSysPro\stm32\USER\usart1.h</Name>
           <ColumnNumber>14</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>11</CurrentLine>
         </Doc>
         <Doc>
-          <Name>led.h</Name>
+          <Name>F:\GitHub\transSysPro\stm32\USER\led.h</Name>
           <ColumnNumber>8</ColumnNumber>
           <TopLine>7</TopLine>
           <CurrentLine>24</CurrentLine>
@@ -2065,7 +2065,7 @@
           <CurrentLine>2</CurrentLine>
         </Doc>
         <Doc>
-          <Name>..\FWlib\inc\stm32f10x_gpio.h</Name>
+          <Name>F:\GitHub\transSysPro\stm32\FWlib\inc\stm32f10x_gpio.h</Name>
           <ColumnNumber>8</ColumnNumber>
           <TopLine>131</TopLine>
           <CurrentLine>134</CurrentLine>

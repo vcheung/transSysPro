@@ -1,0 +1,17 @@
+..\Output\main.o: main.c
+..\Output\main.o: includes.h
+..\Output\main.o: ..\CMSIS\stm32f10x.h
+..\Output\main.o: ..\CMSIS\core_cm3.h
+..\Output\main.o: C:\Keil\ARM\RV31\INC\stdint.h
+..\Output\main.o: ..\CMSIS\system_stm32f10x.h
+..\Output\main.o: ..\USER\stm32f10x_conf.h
+..\Output\main.o: ..\FWlib\inc\stm32f10x_gpio.h
+..\Output\main.o: ..\CMSIS\stm32f10x.h
+..\Output\main.o: ..\FWlib\inc\stm32f10x_rcc.h
+..\Output\main.o: ..\uCOS-II\Source\ucos_ii.h
+..\Output\main.o: ..\APP\app_cfg.h
+..\Output\main.o: ..\APP\os_cfg.h
+..\Output\main.o: ..\uCOS-II\Ports\os_cpu.h
+..\Output\main.o: ..\BSP\BSP.h
+..\Output\main.o: ..\APP\app.h
+..\Output\main.o: ..\BSP\led.h

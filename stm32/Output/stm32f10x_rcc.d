@@ -8,3 +8,4 @@
 ..\Output\stm32f10x_rcc.o: ..\FWlib\inc\stm32f10x_gpio.h
 ..\Output\stm32f10x_rcc.o: ..\CMSIS\stm32f10x.h
 ..\Output\stm32f10x_rcc.o: ..\FWlib\inc\stm32f10x_rcc.h
+..\Output\stm32f10x_rcc.o: ..\FWlib\inc\stm32f10x_usart.h

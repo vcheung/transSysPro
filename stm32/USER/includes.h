@@ -10,5 +10,6 @@
 
 #include "app.h"	//用户任务函数
 #include "led.h"	//LED驱动函数
+#include "usart1.h"
 
 #endif	//__INCLUDE_H__

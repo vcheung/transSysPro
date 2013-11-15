@@ -8,3 +8,4 @@
 ..\Output\led.o: ..\FWlib\inc\stm32f10x_gpio.h
 ..\Output\led.o: ..\CMSIS\stm32f10x.h
 ..\Output\led.o: ..\FWlib\inc\stm32f10x_rcc.h
+..\Output\led.o: ..\FWlib\inc\stm32f10x_usart.h

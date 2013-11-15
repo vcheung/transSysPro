@@ -207,7 +207,7 @@
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
-            <useUlib>0</useUlib>
+            <useUlib>1</useUlib>
             <EndSel>0</EndSel>
             <uLtcg>0</uLtcg>
             <RoSelD>3</RoSelD>
@@ -420,6 +420,11 @@
               <FileType>1</FileType>
               <FilePath>..\FWlib\src\stm32f10x_rcc.c</FilePath>
             </File>
+            <File>
+              <FileName>stm32f10x_usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FWlib\src\stm32f10x_usart.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -459,6 +464,11 @@
               <FileName>led.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\BSP\led.c</FilePath>
+            </File>
+            <File>
+              <FileName>usart1.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\usart1.c</FilePath>
             </File>
           </Files>
         </Group>

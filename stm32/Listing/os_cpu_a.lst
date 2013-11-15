@@ -422,8 +422,8 @@ ARM Macro Assembler    Page 7
               00000000 
               00000000 
 Command Line: --debug --xref --device=DARMSTM --apcs=interwork -o..\Output\os_c
-pu_a.o -IC:\Keil\ARM\INC\ST\STM32F10x --predefine="__EVAL SETA 1" --list=..\Lis
-ting\os_cpu_a.lst ..\uCOS-II\Ports\os_cpu_a.asm
+pu_a.o -IC:\Keil\ARM\INC\ST\STM32F10x --predefine="__EVAL SETA 1" --predefine="
+__MICROLIB SETA 1" --list=..\Listing\os_cpu_a.lst ..\uCOS-II\Ports\os_cpu_a.asm
 
 
 
@@ -630,4 +630,4 @@ Symbol: OSTaskSwHook
       At line 217 in file ..\uCOS-II\Ports\os_cpu_a.asm
 Comment: OSTaskSwHook used once
 8 symbols
-343 symbols in table
+344 symbols in table

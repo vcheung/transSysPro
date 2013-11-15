@@ -8,6 +8,7 @@
 ..\Output\stm32f10x_it.o: ..\FWlib\inc\stm32f10x_gpio.h
 ..\Output\stm32f10x_it.o: ..\CMSIS\stm32f10x.h
 ..\Output\stm32f10x_it.o: ..\FWlib\inc\stm32f10x_rcc.h
+..\Output\stm32f10x_it.o: ..\FWlib\inc\stm32f10x_usart.h
 ..\Output\stm32f10x_it.o: ..\uCOS-II\Source\ucos_ii.h
 ..\Output\stm32f10x_it.o: ..\APP\app_cfg.h
 ..\Output\stm32f10x_it.o: ..\APP\os_cfg.h
@@ -15,3 +16,6 @@
 ..\Output\stm32f10x_it.o: ..\BSP\BSP.h
 ..\Output\stm32f10x_it.o: ..\APP\app.h
 ..\Output\stm32f10x_it.o: ..\BSP\led.h
+..\Output\stm32f10x_it.o: ..\BSP\usart1.h
+..\Output\stm32f10x_it.o: C:\Keil\ARM\RV31\INC\stdio.h
+..\Output\stm32f10x_it.o: C:\Keil\ARM\RV31\INC\stdarg.h

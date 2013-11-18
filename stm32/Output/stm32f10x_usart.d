@@ -5,7 +5,10 @@
 ..\Output\stm32f10x_usart.o: C:\Keil\ARM\RV31\INC\stdint.h
 ..\Output\stm32f10x_usart.o: ..\CMSIS\system_stm32f10x.h
 ..\Output\stm32f10x_usart.o: ..\USER\stm32f10x_conf.h
-..\Output\stm32f10x_usart.o: ..\FWlib\inc\stm32f10x_gpio.h
+..\Output\stm32f10x_usart.o: ..\FWlib\inc\stm32f10x_adc.h
 ..\Output\stm32f10x_usart.o: ..\CMSIS\stm32f10x.h
+..\Output\stm32f10x_usart.o: ..\FWlib\inc\stm32f10x_dma.h
+..\Output\stm32f10x_usart.o: ..\FWlib\inc\stm32f10x_flash.h
+..\Output\stm32f10x_usart.o: ..\FWlib\inc\stm32f10x_gpio.h
 ..\Output\stm32f10x_usart.o: ..\FWlib\inc\stm32f10x_rcc.h
 ..\Output\stm32f10x_usart.o: ..\FWlib\inc\stm32f10x_usart.h

@@ -425,6 +425,11 @@
               <FileType>1</FileType>
               <FilePath>..\FWlib\src\stm32f10x_usart.c</FilePath>
             </File>
+            <File>
+              <FileName>stm32f10x_flash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FWlib\src\stm32f10x_flash.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -469,6 +474,11 @@
               <FileName>usart1.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\BSP\usart1.c</FilePath>
+            </File>
+            <File>
+              <FileName>ledDis.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\ledDis.c</FilePath>
             </File>
           </Files>
         </Group>

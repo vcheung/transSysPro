@@ -10,6 +10,8 @@
 
 #include "app.h"	//用户任务函数
 #include "led.h"	//LED驱动函数
-#include "usart1.h"
+#include "usart1.h"	//串口1
+#include "ledDis.h"	//数码管
+#include "adc.h"	//ADC1
 
 #endif	//__INCLUDE_H__

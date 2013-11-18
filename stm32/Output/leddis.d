@@ -1,0 +1,14 @@
+..\Output\leddis.o: ..\BSP\ledDis.c
+..\Output\leddis.o: ..\BSP\ledDis.h
+..\Output\leddis.o: ..\CMSIS\stm32f10x.h
+..\Output\leddis.o: ..\CMSIS\core_cm3.h
+..\Output\leddis.o: C:\Keil\ARM\RV31\INC\stdint.h
+..\Output\leddis.o: ..\CMSIS\system_stm32f10x.h
+..\Output\leddis.o: ..\USER\stm32f10x_conf.h
+..\Output\leddis.o: ..\FWlib\inc\stm32f10x_adc.h
+..\Output\leddis.o: ..\CMSIS\stm32f10x.h
+..\Output\leddis.o: ..\FWlib\inc\stm32f10x_dma.h
+..\Output\leddis.o: ..\FWlib\inc\stm32f10x_flash.h
+..\Output\leddis.o: ..\FWlib\inc\stm32f10x_gpio.h
+..\Output\leddis.o: ..\FWlib\inc\stm32f10x_rcc.h
+..\Output\leddis.o: ..\FWlib\inc\stm32f10x_usart.h

@@ -14,8 +14,10 @@ void SysTick_Init(void)
  */
  void BSP_Init(void)
 {
- 	SystemInit();		/* 配置系统时钟为72MHz */
-	SysTick_Init();		/* 初始化并使能SysTick定时器 */
-	LED_GPIO_config();	/* LED端口初始化 */
-	USART1_Config();
+ 	SystemInit();					/* 配置系统时钟为72MHz */
+	SysTick_Init();					/* 初始化并使能SysTick定时器 */
+	LED_GPIO_config();				/* LED端口初始化 */
+	USART1_Config();				/* 串口 */
+	LEDDIS_GPIO_Configuration();	/* 数码管 */
+	ADC1_Init();					/* ADC1 */
 }

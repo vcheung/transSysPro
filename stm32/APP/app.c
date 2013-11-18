@@ -27,6 +27,7 @@ const u8 LEDData[] =
 /* ADC */
 u8 ADC_ConvertedValueLocal;        
 extern __IO uint16_t ADC_ConvertedValue;
+extern OS_EVENT* adc_MBOX;
 
 static OS_STK led_task_stk[LED_TASK_STK_SIZE];	//定义栈
 static OS_STK usart1_task_stk[USART1_TASK_STK_SIZE];	
@@ -36,6 +37,7 @@ static OS_STK adc1_task_stk[ADC1_TASK_STK_SIZE];
 void Task_START(void *p_arg)
 {
 	(void)p_arg;	//'p_arg'没有用到，防止编译器警告
+	adc_MBOX = OSMboxCreate((void *)0);
 
 	OSTaskCreate(Task_LED,(void *)0,
 		&led_task_stk[LED_TASK_STK_SIZE-1],LED_TASK_PRIO);
@@ -77,10 +79,13 @@ void Task_LED(void *p_arg)
 void Task_USART1(void *p_arg)
 {
 	(void)p_arg;	//'p_arg'没有用到，防止编译器警告
+	
 	while(1)
 	{
-		 printf(" hello ");
-		 OSTimeDlyHMSM(0,0,0,500);
+		unsigned char num,err;
+		num = *(unsigned char*)OSMboxPend(adc_MBOX,0,&err);
+		printf(" hello: %d",num);
+		OSTimeDlyHMSM(0,0,0,500);
 	}
 }
 
@@ -128,6 +133,7 @@ void Task_ADC1(void *p_arg)
 	while(1)
 	{
 		 ADC_ConvertedValueLocal =(float) ADC_ConvertedValue/4096*10;
+		 OSMboxPost(adc_MBOX,(void *)&ADC_ConvertedValueLocal);
 		 OSTimeDlyHMSM(0,0,0,500);
 	}
 }

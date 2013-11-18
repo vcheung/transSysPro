@@ -21,6 +21,7 @@
 #include "includes.h"
 
 static OS_STK startup_task_stk[STARTUP_TASK_STK_SIZE];	//∂®“Â’ª
+OS_EVENT* adc_MBOX;
 
 int main(void)
 {

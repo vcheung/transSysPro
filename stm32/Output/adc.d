@@ -8,7 +8,9 @@
 ..\Output\adc.o: ..\FWlib\inc\stm32f10x_adc.h
 ..\Output\adc.o: ..\CMSIS\stm32f10x.h
 ..\Output\adc.o: ..\FWlib\inc\stm32f10x_dma.h
+..\Output\adc.o: ..\FWlib\inc\stm32f10x_exti.h
 ..\Output\adc.o: ..\FWlib\inc\stm32f10x_flash.h
 ..\Output\adc.o: ..\FWlib\inc\stm32f10x_gpio.h
 ..\Output\adc.o: ..\FWlib\inc\stm32f10x_rcc.h
 ..\Output\adc.o: ..\FWlib\inc\stm32f10x_usart.h
+..\Output\adc.o: ..\FWlib\inc\misc.h

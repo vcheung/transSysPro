@@ -8,7 +8,9 @@
 ..\Output\led.o: ..\FWlib\inc\stm32f10x_adc.h
 ..\Output\led.o: ..\CMSIS\stm32f10x.h
 ..\Output\led.o: ..\FWlib\inc\stm32f10x_dma.h
+..\Output\led.o: ..\FWlib\inc\stm32f10x_exti.h
 ..\Output\led.o: ..\FWlib\inc\stm32f10x_flash.h
 ..\Output\led.o: ..\FWlib\inc\stm32f10x_gpio.h
 ..\Output\led.o: ..\FWlib\inc\stm32f10x_rcc.h
 ..\Output\led.o: ..\FWlib\inc\stm32f10x_usart.h
+..\Output\led.o: ..\FWlib\inc\misc.h

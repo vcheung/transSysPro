@@ -33,6 +33,8 @@
 /* Private define ------------------------------------------------------------*/
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
+extern OS_EVENT* key_SEM;
+extern OS_EVENT* keyDis_SEM;
 /* Private function prototypes -----------------------------------------------*/
 /* Private functions ---------------------------------------------------------*/
 
@@ -160,5 +162,17 @@ void SysTick_Handler(void)
   * @}
   */ 
 
+/* 按键中断0 */
+void EXTI0_IRQHandler(void)
+{
+	if(EXTI_GetITStatus(EXTI_Line0) != RESET) //确保是否产生了EXTI Line中断
+	{
+		OSIntEnter();
+	    OSSemPost(key_SEM); // 发送信号量,这个函数并不会引起系统调度，所以中断服务函数一定要简洁。
+	    OSSemPost(keyDis_SEM);
+		EXTI_ClearITPendingBit(EXTI_Line0); // 清除标志位
+	    OSIntExit();
+	}  
+}
 
 /******************* (C) COPYRIGHT 2011 STMicroelectronics *****END OF FILE****/

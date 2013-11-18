@@ -8,10 +8,12 @@
 ..\Output\stm32f10x_it.o: ..\FWlib\inc\stm32f10x_adc.h
 ..\Output\stm32f10x_it.o: ..\CMSIS\stm32f10x.h
 ..\Output\stm32f10x_it.o: ..\FWlib\inc\stm32f10x_dma.h
+..\Output\stm32f10x_it.o: ..\FWlib\inc\stm32f10x_exti.h
 ..\Output\stm32f10x_it.o: ..\FWlib\inc\stm32f10x_flash.h
 ..\Output\stm32f10x_it.o: ..\FWlib\inc\stm32f10x_gpio.h
 ..\Output\stm32f10x_it.o: ..\FWlib\inc\stm32f10x_rcc.h
 ..\Output\stm32f10x_it.o: ..\FWlib\inc\stm32f10x_usart.h
+..\Output\stm32f10x_it.o: ..\FWlib\inc\misc.h
 ..\Output\stm32f10x_it.o: ..\uCOS-II\Source\ucos_ii.h
 ..\Output\stm32f10x_it.o: ..\APP\app_cfg.h
 ..\Output\stm32f10x_it.o: ..\APP\os_cfg.h
@@ -24,3 +26,4 @@
 ..\Output\stm32f10x_it.o: C:\Keil\ARM\RV31\INC\stdarg.h
 ..\Output\stm32f10x_it.o: ..\BSP\ledDis.h
 ..\Output\stm32f10x_it.o: ..\BSP\adc.h
+..\Output\stm32f10x_it.o: ..\BSP\exti.h

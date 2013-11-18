@@ -20,4 +20,5 @@ void SysTick_Init(void)
 	USART1_Config();				/* 串口 */
 	LEDDIS_GPIO_Configuration();	/* 数码管 */
 	ADC1_Init();					/* ADC1 */
+	EXTI_PA0_Config();				/* 按键0-中断0 */
 }

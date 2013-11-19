@@ -1,0 +1,13 @@
+INPUT(
+./release\main.o
+./release\widget.o
+./release\workwidget.o
+./release\myinputpanelcontext.o
+./release\secretinput.o
+./release\myinputpanel.o
+./release\moc_widget.o
+./release\moc_workwidget.o
+./release\moc_myinputpanelcontext.o
+./release\moc_secretinput.o
+./release\moc_myinputpanel.o
+);

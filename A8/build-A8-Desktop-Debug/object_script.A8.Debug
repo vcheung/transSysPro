@@ -1,0 +1,13 @@
+INPUT(
+./debug\main.o
+./debug\widget.o
+./debug\workwidget.o
+./debug\myinputpanelcontext.o
+./debug\secretinput.o
+./debug\myinputpanel.o
+./debug\moc_widget.o
+./debug\moc_workwidget.o
+./debug\moc_myinputpanelcontext.o
+./debug\moc_secretinput.o
+./debug\moc_myinputpanel.o
+);

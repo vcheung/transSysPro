@@ -11,6 +11,7 @@
 ..\Output\leddis.o: ..\FWlib\inc\stm32f10x_exti.h
 ..\Output\leddis.o: ..\FWlib\inc\stm32f10x_flash.h
 ..\Output\leddis.o: ..\FWlib\inc\stm32f10x_gpio.h
+..\Output\leddis.o: ..\FWlib\inc\stm32f10x_i2c.h
 ..\Output\leddis.o: ..\FWlib\inc\stm32f10x_rcc.h
 ..\Output\leddis.o: ..\FWlib\inc\stm32f10x_usart.h
 ..\Output\leddis.o: ..\FWlib\inc\misc.h

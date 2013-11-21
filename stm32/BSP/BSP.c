@@ -21,4 +21,5 @@ void SysTick_Init(void)
 	LEDDIS_GPIO_Configuration();	/* 数码管 */
 	ADC1_Init();					/* ADC1 */
 	EXTI_PA0_Config();				/* 按键0-中断0 */
+	I2C_EE_Init();					/* EEPROM */
 }

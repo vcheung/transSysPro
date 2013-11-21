@@ -1,39 +1,5 @@
 #include "includes.h"
-
-/* 数码管 */
-#define	SH		(0x01 << 0)					   //数码管小数点的编码
-#define	SG		(0x01 << 1)					   //数码管G段的编码
-#define	SF		(0x01 << 2)					   //数码管F段的编码
-#define	SE		(0x01 << 3)					   //数码管E段的编码
-#define	SD		(0x01 << 4)					   //数码管D段的编码
-#define	SC		(0x01 << 5)					   //数码管C段的编码
-#define	SB		(0x01 << 6)					   //数码管B段的编码
-#define	SA		(0x01 << 7)					   //数码管A段的编码
-const u8 LEDData[] =
-{
-	SA |SB |SC | SD |SE |SF,		    // 0的编码
-	SB | SC,						    //01的编码
-	SA |SB |SG | SE | SD,			    //02的编码
-	SA |SB |SC | SD | SG,			    //03的编码
-	SB |SF | SG | SC,				    //04的编码
-	SA |SF |SG |SC  | SD,			    //05的编码
-	SA |SC | SD | SE | SG | SF,	        //06的编码
-	SA | SB| SC,					    //07的编码
-	SA |SB |SC | SD | SE | SF | SG,     //08的编码
-	SA |SB |SC|SD | SF | SG	,	        //09的编码	
-};
-
-/* ADC */
-u8 ADC_ConvertedValueLocal;        
-extern __IO uint16_t ADC_ConvertedValue;
-extern OS_EVENT* adc_MBOX;
-
-/* 按键 */
-extern OS_EVENT* key_SEM;
-extern OS_EVENT* keyDis_SEM;
-
-/* 全局变量 */
-unsigned int sum=0;
+#include "myConfig.h"
 
 static OS_STK led_task_stk[LED_TASK_STK_SIZE];	//定义栈
 static OS_STK usart1_task_stk[USART1_TASK_STK_SIZE];	
@@ -99,11 +65,60 @@ void Task_USART1(void *p_arg)
 	{	
 		unsigned char errkey;
 		unsigned char num,err;
+		u16 i;
+
+		car1.name= "张三" ;
+		car1.ID = "0123456789";
+		car1.carID = "粤E12345";
+		car1.stWeight = 10;
+		car1.weight = 5;
 
 		OSSemPend(key_SEM,0,&errkey);
 		num = *(unsigned char*)OSMboxPend(adc_MBOX,0,&err);
 		printf(" hello: %d",num);
 		OSTimeDlyHMSM(0,0,0,500);
+		
+		/* 读写EEPROM */
+		printf("写入的数据\n\r");
+	    
+		for ( i=0; i<=255; i++ ) //填充缓冲
+	  	{   
+//		    I2c_Buf_Write[i] = i;
+		    I2c_Buf_Write = "张三";
+	
+//		    printf("0x%02X ", I2c_Buf_Write[i]);
+
+//		    printf("%c", I2c_Buf_Write[i]);
+		    printf("%c", car1.name[i]);
+	    	if(i%16 == 15)    
+	        	printf("\n\r");    
+	   	}
+	
+	  	//将I2c_Buf_Write中顺序递增的数据写入EERPOM中 
+		I2C_EE_BufferWrite(I2c_Buf_Write, EEP_Firstpage, 256);
+			 
+		OSTimeDlyHMSM(0,0,0,500);
+
+	  	printf("\n\r读出的数据\n\r");
+	  	//将EEPROM读出数据顺序保持到I2c_Buf_Read中 
+		I2C_EE_BufferRead(I2c_Buf_Read, EEP_Firstpage, 256); 
+	
+	  	//将I2c_Buf_Read中的数据通过串口打印
+		for (i=0; i<256; i++)
+		{	
+			if(I2c_Buf_Read[i] != I2c_Buf_Write[i])
+			{
+				printf("0x%02X ", I2c_Buf_Read[i]);
+				printf("错误:I2C EEPROM写入与读出的数据不一致\n\r");
+				return;
+			}
+//	    printf("0x%02X ", I2c_Buf_Read[i]);
+	    printf("%c", I2c_Buf_Read[i]);
+	    if(i%16 == 15)    
+	        printf("\n\r");
+	    
+		}
+	  	printf("I2C(AT24C02)读写测试成功\n\r");
 	}
 }
 

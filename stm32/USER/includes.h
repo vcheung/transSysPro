@@ -14,5 +14,6 @@
 #include "ledDis.h"	//数码管
 #include "adc.h"	//ADC1
 #include "exti.h"  	//按键中断
+#include "i2c_ee.h"	//eeprom
 
 #endif	//__INCLUDE_H__

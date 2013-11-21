@@ -11,6 +11,7 @@
 ..\Output\stm32f10x_it.o: ..\FWlib\inc\stm32f10x_exti.h
 ..\Output\stm32f10x_it.o: ..\FWlib\inc\stm32f10x_flash.h
 ..\Output\stm32f10x_it.o: ..\FWlib\inc\stm32f10x_gpio.h
+..\Output\stm32f10x_it.o: ..\FWlib\inc\stm32f10x_i2c.h
 ..\Output\stm32f10x_it.o: ..\FWlib\inc\stm32f10x_rcc.h
 ..\Output\stm32f10x_it.o: ..\FWlib\inc\stm32f10x_usart.h
 ..\Output\stm32f10x_it.o: ..\FWlib\inc\misc.h
@@ -28,3 +29,4 @@
 ..\Output\stm32f10x_it.o: ..\BSP\ledDis.h
 ..\Output\stm32f10x_it.o: ..\BSP\adc.h
 ..\Output\stm32f10x_it.o: ..\BSP\exti.h
+..\Output\stm32f10x_it.o: ..\BSP\i2c_ee.h

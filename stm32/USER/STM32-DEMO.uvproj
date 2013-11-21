@@ -450,6 +450,11 @@
               <FileType>1</FileType>
               <FilePath>..\FWlib\src\misc.c</FilePath>
             </File>
+            <File>
+              <FileName>stm32f10x_i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FWlib\src\stm32f10x_i2c.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -509,6 +514,11 @@
               <FileName>exti.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\BSP\exti.c</FilePath>
+            </File>
+            <File>
+              <FileName>i2c_ee.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\i2c_ee.c</FilePath>
             </File>
           </Files>
         </Group>

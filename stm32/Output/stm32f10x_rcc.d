@@ -11,6 +11,7 @@
 ..\Output\stm32f10x_rcc.o: ..\FWlib\inc\stm32f10x_exti.h
 ..\Output\stm32f10x_rcc.o: ..\FWlib\inc\stm32f10x_flash.h
 ..\Output\stm32f10x_rcc.o: ..\FWlib\inc\stm32f10x_gpio.h
+..\Output\stm32f10x_rcc.o: ..\FWlib\inc\stm32f10x_i2c.h
 ..\Output\stm32f10x_rcc.o: ..\FWlib\inc\stm32f10x_rcc.h
 ..\Output\stm32f10x_rcc.o: ..\FWlib\inc\stm32f10x_usart.h
 ..\Output\stm32f10x_rcc.o: ..\FWlib\inc\misc.h

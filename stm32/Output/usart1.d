@@ -12,6 +12,7 @@
 ..\Output\usart1.o: ..\FWlib\inc\stm32f10x_exti.h
 ..\Output\usart1.o: ..\FWlib\inc\stm32f10x_flash.h
 ..\Output\usart1.o: ..\FWlib\inc\stm32f10x_gpio.h
+..\Output\usart1.o: ..\FWlib\inc\stm32f10x_i2c.h
 ..\Output\usart1.o: ..\FWlib\inc\stm32f10x_rcc.h
 ..\Output\usart1.o: ..\FWlib\inc\stm32f10x_usart.h
 ..\Output\usart1.o: ..\FWlib\inc\misc.h

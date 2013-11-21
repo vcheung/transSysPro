@@ -14,5 +14,6 @@
 #include "ledDis.h"	//数码管
 #include "adc.h"	//ADC1
 #include "exti.h"  	//按键中断
+#include "flash.h"	//flash
 
 #endif	//__INCLUDE_H__

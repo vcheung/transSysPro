@@ -142,13 +142,6 @@
           <Name>-O14 -S0 -C0 -N00("ARM Cortex-M3") -D00(1BA00477) -L00(4) -FO7 -FD20000000 -FC800 -FN1 -FF0STM32F10x_128 -FS08000000 -FL010000)</Name>
         </SetRegEntry>
       </TargetDriverDllRegistry>
-      <WatchWindow1>
-        <Ww>
-          <count>0</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>GPIO_Pin_4,0x0A</ItemText>
-        </Ww>
-      </WatchWindow1>
       <DebugFlag>
         <trace>0</trace>
         <periodic>1</periodic>
@@ -193,8 +186,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>130</TopLine>
-      <CurrentLine>134</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\CMSIS\startup\startup_stm32f10x_md.s</PathWithFileName>
       <FilenameWithoutPath>startup_stm32f10x_md.s</FilenameWithoutPath>
@@ -210,12 +203,12 @@
       <GroupNumber>2</GroupNumber>
       <FileNumber>2</FileNumber>
       <FileType>1</FileType>
-      <tvExp>1</tvExp>
+      <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>6</ColumnNumber>
+      <ColumnNumber>10</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>14</TopLine>
-      <CurrentLine>27</CurrentLine>
+      <TopLine>15</TopLine>
+      <CurrentLine>25</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -226,10 +219,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>12</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>115</TopLine>
-      <CurrentLine>115</CurrentLine>
+      <TopLine>154</TopLine>
+      <CurrentLine>171</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\stm32f10x_it.c</PathWithFileName>
       <FilenameWithoutPath>stm32f10x_it.c</FilenameWithoutPath>
@@ -238,7 +231,7 @@
 
   <Group>
     <GroupName>FWlib</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <File>
@@ -261,10 +254,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>5</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>354</TopLine>
+      <CurrentLine>354</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\FWlib\src\stm32f10x_rcc.c</PathWithFileName>
       <FilenameWithoutPath>stm32f10x_rcc.c</FilenameWithoutPath>
@@ -285,7 +278,7 @@
     </File>
     <File>
       <GroupNumber>3</GroupNumber>
-      <FileNumber>0</FileNumber>
+      <FileNumber>7</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -297,16 +290,72 @@
       <PathWithFileName>..\FWlib\src\stm32f10x_flash.c</PathWithFileName>
       <FilenameWithoutPath>stm32f10x_flash.c</FilenameWithoutPath>
     </File>
+    <File>
+      <GroupNumber>3</GroupNumber>
+      <FileNumber>8</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <Focus>0</Focus>
+      <ColumnNumber>0</ColumnNumber>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\FWlib\src\stm32f10x_dma.c</PathWithFileName>
+      <FilenameWithoutPath>stm32f10x_dma.c</FilenameWithoutPath>
+    </File>
+    <File>
+      <GroupNumber>3</GroupNumber>
+      <FileNumber>9</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <Focus>0</Focus>
+      <ColumnNumber>0</ColumnNumber>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\FWlib\src\stm32f10x_adc.c</PathWithFileName>
+      <FilenameWithoutPath>stm32f10x_adc.c</FilenameWithoutPath>
+    </File>
+    <File>
+      <GroupNumber>3</GroupNumber>
+      <FileNumber>10</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <Focus>0</Focus>
+      <ColumnNumber>0</ColumnNumber>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\FWlib\src\misc.c</PathWithFileName>
+      <FilenameWithoutPath>misc.c</FilenameWithoutPath>
+    </File>
+    <File>
+      <GroupNumber>3</GroupNumber>
+      <FileNumber>11</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <Focus>0</Focus>
+      <ColumnNumber>0</ColumnNumber>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\FWlib\src\stm32f10x_exti.c</PathWithFileName>
+      <FilenameWithoutPath>stm32f10x_exti.c</FilenameWithoutPath>
+    </File>
   </Group>
 
   <Group>
     <GroupName>CMSIS</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <File>
       <GroupNumber>4</GroupNumber>
-      <FileNumber>7</FileNumber>
+      <FileNumber>12</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -320,7 +369,7 @@
     </File>
     <File>
       <GroupNumber>4</GroupNumber>
-      <FileNumber>8</FileNumber>
+      <FileNumber>13</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -341,14 +390,14 @@
     <cbSel>0</cbSel>
     <File>
       <GroupNumber>5</GroupNumber>
-      <FileNumber>9</FileNumber>
+      <FileNumber>14</FileNumber>
       <FileType>1</FileType>
-      <tvExp>1</tvExp>
+      <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>20</ColumnNumber>
+      <ColumnNumber>33</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>61</TopLine>
-      <CurrentLine>81</CurrentLine>
+      <TopLine>195</TopLine>
+      <CurrentLine>215</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\APP\app.c</PathWithFileName>
       <FilenameWithoutPath>app.c</FilenameWithoutPath>
@@ -362,59 +411,101 @@
     <cbSel>0</cbSel>
     <File>
       <GroupNumber>6</GroupNumber>
-      <FileNumber>10</FileNumber>
+      <FileNumber>15</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>11</ColumnNumber>
+      <ColumnNumber>29</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>19</CurrentLine>
+      <TopLine>2</TopLine>
+      <CurrentLine>24</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\BSP\BSP.c</PathWithFileName>
       <FilenameWithoutPath>BSP.c</FilenameWithoutPath>
     </File>
     <File>
       <GroupNumber>6</GroupNumber>
-      <FileNumber>11</FileNumber>
+      <FileNumber>16</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>15</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>16</TopLine>
-      <CurrentLine>23</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\BSP\led.c</PathWithFileName>
       <FilenameWithoutPath>led.c</FilenameWithoutPath>
     </File>
     <File>
       <GroupNumber>6</GroupNumber>
-      <FileNumber>12</FileNumber>
+      <FileNumber>17</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>13</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>7</TopLine>
-      <CurrentLine>14</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\BSP\usart1.c</PathWithFileName>
       <FilenameWithoutPath>usart1.c</FilenameWithoutPath>
     </File>
     <File>
       <GroupNumber>6</GroupNumber>
-      <FileNumber>0</FileNumber>
+      <FileNumber>18</FileNumber>
       <FileType>1</FileType>
-      <tvExp>1</tvExp>
+      <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>1</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>8</TopLine>
-      <CurrentLine>8</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\BSP\ledDis.c</PathWithFileName>
       <FilenameWithoutPath>ledDis.c</FilenameWithoutPath>
+    </File>
+    <File>
+      <GroupNumber>6</GroupNumber>
+      <FileNumber>19</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <Focus>0</Focus>
+      <ColumnNumber>0</ColumnNumber>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\BSP\adc.c</PathWithFileName>
+      <FilenameWithoutPath>adc.c</FilenameWithoutPath>
+    </File>
+    <File>
+      <GroupNumber>6</GroupNumber>
+      <FileNumber>20</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <Focus>0</Focus>
+      <ColumnNumber>0</ColumnNumber>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <TopLine>31</TopLine>
+      <CurrentLine>31</CurrentLine>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\BSP\exti.c</PathWithFileName>
+      <FilenameWithoutPath>exti.c</FilenameWithoutPath>
+    </File>
+    <File>
+      <GroupNumber>6</GroupNumber>
+      <FileNumber>0</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <Focus>0</Focus>
+      <ColumnNumber>0</ColumnNumber>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <TopLine>1</TopLine>
+      <CurrentLine>11</CurrentLine>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\BSP\flash.c</PathWithFileName>
+      <FilenameWithoutPath>flash.c</FilenameWithoutPath>
     </File>
   </Group>
 
@@ -425,7 +516,7 @@
     <cbSel>0</cbSel>
     <File>
       <GroupNumber>7</GroupNumber>
-      <FileNumber>13</FileNumber>
+      <FileNumber>21</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -439,7 +530,7 @@
     </File>
     <File>
       <GroupNumber>7</GroupNumber>
-      <FileNumber>14</FileNumber>
+      <FileNumber>22</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -453,7 +544,7 @@
     </File>
     <File>
       <GroupNumber>7</GroupNumber>
-      <FileNumber>15</FileNumber>
+      <FileNumber>23</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -467,7 +558,7 @@
     </File>
     <File>
       <GroupNumber>7</GroupNumber>
-      <FileNumber>16</FileNumber>
+      <FileNumber>24</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -481,7 +572,7 @@
     </File>
     <File>
       <GroupNumber>7</GroupNumber>
-      <FileNumber>17</FileNumber>
+      <FileNumber>25</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -495,7 +586,7 @@
     </File>
     <File>
       <GroupNumber>7</GroupNumber>
-      <FileNumber>18</FileNumber>
+      <FileNumber>26</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -509,7 +600,7 @@
     </File>
     <File>
       <GroupNumber>7</GroupNumber>
-      <FileNumber>19</FileNumber>
+      <FileNumber>27</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -523,7 +614,7 @@
     </File>
     <File>
       <GroupNumber>7</GroupNumber>
-      <FileNumber>20</FileNumber>
+      <FileNumber>28</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -537,7 +628,7 @@
     </File>
     <File>
       <GroupNumber>7</GroupNumber>
-      <FileNumber>21</FileNumber>
+      <FileNumber>29</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -551,7 +642,7 @@
     </File>
     <File>
       <GroupNumber>7</GroupNumber>
-      <FileNumber>22</FileNumber>
+      <FileNumber>30</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -572,7 +663,7 @@
     <cbSel>0</cbSel>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>23</FileNumber>
+      <FileNumber>31</FileNumber>
       <FileType>2</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -586,7 +677,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>24</FileNumber>
+      <FileNumber>32</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -600,7 +691,7 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>25</FileNumber>
+      <FileNumber>33</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -615,7 +706,85 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>F:\GitHub\transSysPro\stm32\BSP\usart1.h</PathWithFilename>
+    <PathWithFilename>F:\GitHub\transSysPro\stm32\BSP\flash.h</PathWithFilename>
+    <TopLine>1</TopLine>
+    <CurrentLine>7</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
+
+  <AlienFiles>
+    <PathWithFilename>F:\GitHub\transSysPro\stm32\USER\stm32f10x_conf.h</PathWithFilename>
+    <TopLine>22</TopLine>
+    <CurrentLine>37</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
+
+  <AlienFiles>
+    <PathWithFilename>F:\GitHub\transSysPro\stm32\USER\includes.h</PathWithFilename>
+    <TopLine>1</TopLine>
+    <CurrentLine>17</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
+
+  <AlienFiles>
+    <PathWithFilename>F:\GitHub\transSysPro\stm32\APP\app.h</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>12</CurrentLine>
     <Constant>0</Constant>
@@ -643,111 +812,7 @@
   <AlienFiles>
     <PathWithFilename>F:\GitHub\transSysPro\stm32\APP\app_cfg.h</PathWithFilename>
     <TopLine>1</TopLine>
-    <CurrentLine>14</CurrentLine>
-    <Constant>0</Constant>
-    <WindowPosition>
-      <length>0</length>
-      <flags>0</flags>
-      <showCmd>0</showCmd>
-      <MinPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MinPosition>
-      <MaxPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MaxPosition>
-      <NormalPosition>
-        <Top>0</Top>
-        <Left>0</Left>
-        <Right>0</Right>
-        <Bottom>0</Bottom>
-      </NormalPosition>
-    </WindowPosition>
-  </AlienFiles>
-
-  <AlienFiles>
-    <PathWithFilename>F:\GitHub\transSysPro\stm32\USER\includes.h</PathWithFilename>
-    <TopLine>1</TopLine>
-    <CurrentLine>14</CurrentLine>
-    <Constant>0</Constant>
-    <WindowPosition>
-      <length>0</length>
-      <flags>0</flags>
-      <showCmd>0</showCmd>
-      <MinPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MinPosition>
-      <MaxPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MaxPosition>
-      <NormalPosition>
-        <Top>0</Top>
-        <Left>0</Left>
-        <Right>0</Right>
-        <Bottom>0</Bottom>
-      </NormalPosition>
-    </WindowPosition>
-  </AlienFiles>
-
-  <AlienFiles>
-    <PathWithFilename>F:\GitHub\transSysPro\stm32\USER\stm32f10x_conf.h</PathWithFilename>
-    <TopLine>19</TopLine>
-    <CurrentLine>37</CurrentLine>
-    <Constant>0</Constant>
-    <WindowPosition>
-      <length>0</length>
-      <flags>0</flags>
-      <showCmd>0</showCmd>
-      <MinPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MinPosition>
-      <MaxPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MaxPosition>
-      <NormalPosition>
-        <Top>0</Top>
-        <Left>0</Left>
-        <Right>0</Right>
-        <Bottom>0</Bottom>
-      </NormalPosition>
-    </WindowPosition>
-  </AlienFiles>
-
-  <AlienFiles>
-    <PathWithFilename>F:\GitHub\transSysPro\stm32\BSP\ledDis.h</PathWithFilename>
-    <TopLine>1</TopLine>
-    <CurrentLine>10</CurrentLine>
-    <Constant>0</Constant>
-    <WindowPosition>
-      <length>0</length>
-      <flags>0</flags>
-      <showCmd>0</showCmd>
-      <MinPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MinPosition>
-      <MaxPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MaxPosition>
-      <NormalPosition>
-        <Top>0</Top>
-        <Left>0</Left>
-        <Right>0</Right>
-        <Bottom>0</Bottom>
-      </NormalPosition>
-    </WindowPosition>
-  </AlienFiles>
-
-  <AlienFiles>
-    <PathWithFilename>F:\GitHub\transSysPro\stm32\APP\app.h</PathWithFilename>
-    <TopLine>1</TopLine>
-    <CurrentLine>8</CurrentLine>
+    <CurrentLine>22</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -1418,7 +1483,7 @@
         <DockedRect_top>517</DockedRect_top>
         <DockedRect_left>0</DockedRect_left>
         <DockedRect_bottom>727</DockedRect_bottom>
-        <DockedRect_right>1290</DockedRect_right>
+        <DockedRect_right>1291</DockedRect_right>
         <FloatingRect_top>0</FloatingRect_top>
         <FloatingRect_left>76</FloatingRect_left>
         <FloatingRect_bottom>250</FloatingRect_bottom>
@@ -1443,7 +1508,7 @@
         <DockedRect_top>517</DockedRect_top>
         <DockedRect_left>0</DockedRect_left>
         <DockedRect_bottom>727</DockedRect_bottom>
-        <DockedRect_right>1290</DockedRect_right>
+        <DockedRect_right>1291</DockedRect_right>
         <FloatingRect_top>0</FloatingRect_top>
         <FloatingRect_left>76</FloatingRect_left>
         <FloatingRect_bottom>250</FloatingRect_bottom>
@@ -1468,7 +1533,7 @@
         <DockedRect_top>517</DockedRect_top>
         <DockedRect_left>0</DockedRect_left>
         <DockedRect_bottom>727</DockedRect_bottom>
-        <DockedRect_right>1290</DockedRect_right>
+        <DockedRect_right>1291</DockedRect_right>
         <FloatingRect_top>0</FloatingRect_top>
         <FloatingRect_left>76</FloatingRect_left>
         <FloatingRect_bottom>250</FloatingRect_bottom>
@@ -1493,7 +1558,7 @@
         <DockedRect_top>517</DockedRect_top>
         <DockedRect_left>0</DockedRect_left>
         <DockedRect_bottom>727</DockedRect_bottom>
-        <DockedRect_right>1290</DockedRect_right>
+        <DockedRect_right>1291</DockedRect_right>
         <FloatingRect_top>0</FloatingRect_top>
         <FloatingRect_left>76</FloatingRect_left>
         <FloatingRect_bottom>250</FloatingRect_bottom>
@@ -1518,7 +1583,7 @@
         <DockedRect_top>517</DockedRect_top>
         <DockedRect_left>0</DockedRect_left>
         <DockedRect_bottom>727</DockedRect_bottom>
-        <DockedRect_right>1290</DockedRect_right>
+        <DockedRect_right>1291</DockedRect_right>
         <FloatingRect_top>0</FloatingRect_top>
         <FloatingRect_left>76</FloatingRect_left>
         <FloatingRect_bottom>250</FloatingRect_bottom>
@@ -1543,7 +1608,7 @@
         <DockedRect_top>517</DockedRect_top>
         <DockedRect_left>0</DockedRect_left>
         <DockedRect_bottom>727</DockedRect_bottom>
-        <DockedRect_right>1290</DockedRect_right>
+        <DockedRect_right>1291</DockedRect_right>
         <FloatingRect_top>0</FloatingRect_top>
         <FloatingRect_left>76</FloatingRect_left>
         <FloatingRect_bottom>250</FloatingRect_bottom>
@@ -1568,7 +1633,7 @@
         <DockedRect_top>517</DockedRect_top>
         <DockedRect_left>0</DockedRect_left>
         <DockedRect_bottom>727</DockedRect_bottom>
-        <DockedRect_right>1290</DockedRect_right>
+        <DockedRect_right>1291</DockedRect_right>
         <FloatingRect_top>0</FloatingRect_top>
         <FloatingRect_left>76</FloatingRect_left>
         <FloatingRect_bottom>250</FloatingRect_bottom>
@@ -1593,7 +1658,7 @@
         <DockedRect_top>517</DockedRect_top>
         <DockedRect_left>0</DockedRect_left>
         <DockedRect_bottom>727</DockedRect_bottom>
-        <DockedRect_right>1290</DockedRect_right>
+        <DockedRect_right>1291</DockedRect_right>
         <FloatingRect_top>0</FloatingRect_top>
         <FloatingRect_left>76</FloatingRect_left>
         <FloatingRect_bottom>250</FloatingRect_bottom>
@@ -1618,7 +1683,7 @@
         <DockedRect_top>517</DockedRect_top>
         <DockedRect_left>0</DockedRect_left>
         <DockedRect_bottom>727</DockedRect_bottom>
-        <DockedRect_right>1290</DockedRect_right>
+        <DockedRect_right>1291</DockedRect_right>
         <FloatingRect_top>0</FloatingRect_top>
         <FloatingRect_left>76</FloatingRect_left>
         <FloatingRect_bottom>600</FloatingRect_bottom>
@@ -1643,7 +1708,7 @@
         <DockedRect_top>517</DockedRect_top>
         <DockedRect_left>0</DockedRect_left>
         <DockedRect_bottom>727</DockedRect_bottom>
-        <DockedRect_right>1290</DockedRect_right>
+        <DockedRect_right>1291</DockedRect_right>
         <FloatingRect_top>0</FloatingRect_top>
         <FloatingRect_left>76</FloatingRect_left>
         <FloatingRect_bottom>600</FloatingRect_bottom>
@@ -1668,7 +1733,7 @@
         <DockedRect_top>517</DockedRect_top>
         <DockedRect_left>0</DockedRect_left>
         <DockedRect_bottom>727</DockedRect_bottom>
-        <DockedRect_right>1290</DockedRect_right>
+        <DockedRect_right>1291</DockedRect_right>
         <FloatingRect_top>0</FloatingRect_top>
         <FloatingRect_left>76</FloatingRect_left>
         <FloatingRect_bottom>600</FloatingRect_bottom>
@@ -1693,7 +1758,7 @@
         <DockedRect_top>517</DockedRect_top>
         <DockedRect_left>0</DockedRect_left>
         <DockedRect_bottom>727</DockedRect_bottom>
-        <DockedRect_right>1290</DockedRect_right>
+        <DockedRect_right>1291</DockedRect_right>
         <FloatingRect_top>0</FloatingRect_top>
         <FloatingRect_left>76</FloatingRect_left>
         <FloatingRect_bottom>600</FloatingRect_bottom>
@@ -1718,7 +1783,7 @@
         <DockedRect_top>517</DockedRect_top>
         <DockedRect_left>0</DockedRect_left>
         <DockedRect_bottom>727</DockedRect_bottom>
-        <DockedRect_right>1290</DockedRect_right>
+        <DockedRect_right>1291</DockedRect_right>
         <FloatingRect_top>0</FloatingRect_top>
         <FloatingRect_left>76</FloatingRect_left>
         <FloatingRect_bottom>600</FloatingRect_bottom>
@@ -1743,7 +1808,7 @@
         <DockedRect_top>517</DockedRect_top>
         <DockedRect_left>0</DockedRect_left>
         <DockedRect_bottom>727</DockedRect_bottom>
-        <DockedRect_right>1290</DockedRect_right>
+        <DockedRect_right>1291</DockedRect_right>
         <FloatingRect_top>0</FloatingRect_top>
         <FloatingRect_left>76</FloatingRect_left>
         <FloatingRect_bottom>600</FloatingRect_bottom>
@@ -1768,7 +1833,7 @@
         <DockedRect_top>517</DockedRect_top>
         <DockedRect_left>0</DockedRect_left>
         <DockedRect_bottom>727</DockedRect_bottom>
-        <DockedRect_right>1290</DockedRect_right>
+        <DockedRect_right>1291</DockedRect_right>
         <FloatingRect_top>0</FloatingRect_top>
         <FloatingRect_left>76</FloatingRect_left>
         <FloatingRect_bottom>600</FloatingRect_bottom>
@@ -1793,7 +1858,7 @@
         <DockedRect_top>517</DockedRect_top>
         <DockedRect_left>0</DockedRect_left>
         <DockedRect_bottom>727</DockedRect_bottom>
-        <DockedRect_right>1290</DockedRect_right>
+        <DockedRect_right>1291</DockedRect_right>
         <FloatingRect_top>0</FloatingRect_top>
         <FloatingRect_left>76</FloatingRect_left>
         <FloatingRect_bottom>600</FloatingRect_bottom>
@@ -1818,7 +1883,7 @@
         <DockedRect_top>517</DockedRect_top>
         <DockedRect_left>0</DockedRect_left>
         <DockedRect_bottom>727</DockedRect_bottom>
-        <DockedRect_right>1290</DockedRect_right>
+        <DockedRect_right>1291</DockedRect_right>
         <FloatingRect_top>0</FloatingRect_top>
         <FloatingRect_left>76</FloatingRect_left>
         <FloatingRect_bottom>600</FloatingRect_bottom>
@@ -1843,7 +1908,7 @@
         <DockedRect_top>517</DockedRect_top>
         <DockedRect_left>0</DockedRect_left>
         <DockedRect_bottom>727</DockedRect_bottom>
-        <DockedRect_right>1290</DockedRect_right>
+        <DockedRect_right>1291</DockedRect_right>
         <FloatingRect_top>0</FloatingRect_top>
         <FloatingRect_left>76</FloatingRect_left>
         <FloatingRect_bottom>600</FloatingRect_bottom>
@@ -1993,7 +2058,7 @@
         <DockedRect_top>76</DockedRect_top>
         <DockedRect_left>214</DockedRect_left>
         <DockedRect_bottom>286</DockedRect_bottom>
-        <DockedRect_right>1290</DockedRect_right>
+        <DockedRect_right>1291</DockedRect_right>
         <FloatingRect_top>0</FloatingRect_top>
         <FloatingRect_left>76</FloatingRect_left>
         <FloatingRect_bottom>250</FloatingRect_bottom>
@@ -2018,7 +2083,7 @@
         <DockedRect_top>76</DockedRect_top>
         <DockedRect_left>214</DockedRect_left>
         <DockedRect_bottom>286</DockedRect_bottom>
-        <DockedRect_right>1290</DockedRect_right>
+        <DockedRect_right>1291</DockedRect_right>
         <FloatingRect_top>0</FloatingRect_top>
         <FloatingRect_left>76</FloatingRect_left>
         <FloatingRect_bottom>250</FloatingRect_bottom>
@@ -2043,7 +2108,7 @@
         <DockedRect_top>76</DockedRect_top>
         <DockedRect_left>214</DockedRect_left>
         <DockedRect_bottom>286</DockedRect_bottom>
-        <DockedRect_right>1290</DockedRect_right>
+        <DockedRect_right>1291</DockedRect_right>
         <FloatingRect_top>0</FloatingRect_top>
         <FloatingRect_left>76</FloatingRect_left>
         <FloatingRect_bottom>250</FloatingRect_bottom>
@@ -2068,7 +2133,7 @@
         <DockedRect_top>76</DockedRect_top>
         <DockedRect_left>214</DockedRect_left>
         <DockedRect_bottom>286</DockedRect_bottom>
-        <DockedRect_right>1290</DockedRect_right>
+        <DockedRect_right>1291</DockedRect_right>
         <FloatingRect_top>0</FloatingRect_top>
         <FloatingRect_left>76</FloatingRect_left>
         <FloatingRect_bottom>250</FloatingRect_bottom>
@@ -2093,7 +2158,7 @@
         <DockedRect_top>76</DockedRect_top>
         <DockedRect_left>214</DockedRect_left>
         <DockedRect_bottom>286</DockedRect_bottom>
-        <DockedRect_right>1290</DockedRect_right>
+        <DockedRect_right>1291</DockedRect_right>
         <FloatingRect_top>0</FloatingRect_top>
         <FloatingRect_left>76</FloatingRect_left>
         <FloatingRect_bottom>250</FloatingRect_bottom>
@@ -2361,79 +2426,73 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>9</ActiveTab>
+      <ActiveTab>1</ActiveTab>
       <Documents>
         <Doc>
-          <Name>..\BSP\led.c</Name>
-          <ColumnNumber>15</ColumnNumber>
-          <TopLine>16</TopLine>
-          <CurrentLine>23</CurrentLine>
+          <Name>.\main.c</Name>
+          <ColumnNumber>10</ColumnNumber>
+          <TopLine>15</TopLine>
+          <CurrentLine>25</CurrentLine>
         </Doc>
         <Doc>
-          <Name>.\main.c</Name>
-          <ColumnNumber>6</ColumnNumber>
-          <TopLine>14</TopLine>
-          <CurrentLine>27</CurrentLine>
+          <Name>..\BSP\flash.c</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>11</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\BSP\flash.h</Name>
+          <ColumnNumber>4</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>7</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\BSP\exti.c</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>31</TopLine>
+          <CurrentLine>31</CurrentLine>
         </Doc>
         <Doc>
           <Name>..\USER\stm32f10x_conf.h</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>19</TopLine>
+          <ColumnNumber>26</ColumnNumber>
+          <TopLine>22</TopLine>
           <CurrentLine>37</CurrentLine>
         </Doc>
         <Doc>
-          <Name>..\BSP\usart1.c</Name>
-          <ColumnNumber>13</ColumnNumber>
-          <TopLine>7</TopLine>
-          <CurrentLine>14</CurrentLine>
+          <Name>..\BSP\BSP.c</Name>
+          <ColumnNumber>29</ColumnNumber>
+          <TopLine>2</TopLine>
+          <CurrentLine>24</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\FWlib\src\stm32f10x_rcc.c</Name>
+          <ColumnNumber>5</ColumnNumber>
+          <TopLine>354</TopLine>
+          <CurrentLine>354</CurrentLine>
         </Doc>
         <Doc>
           <Name>includes.h</Name>
-          <ColumnNumber>28</ColumnNumber>
+          <ColumnNumber>26</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>14</CurrentLine>
+          <CurrentLine>17</CurrentLine>
         </Doc>
         <Doc>
           <Name>..\APP\app.c</Name>
-          <ColumnNumber>20</ColumnNumber>
-          <TopLine>61</TopLine>
-          <CurrentLine>81</CurrentLine>
+          <ColumnNumber>33</ColumnNumber>
+          <TopLine>195</TopLine>
+          <CurrentLine>215</CurrentLine>
         </Doc>
         <Doc>
-          <Name>..\APP\app_cfg.h</Name>
-          <ColumnNumber>14</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>14</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>..\BSP\usart1.h</Name>
-          <ColumnNumber>49</ColumnNumber>
+          <Name>..\APP\app.h</Name>
+          <ColumnNumber>29</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>12</CurrentLine>
         </Doc>
         <Doc>
-          <Name>..\BSP\BSP.c</Name>
-          <ColumnNumber>11</ColumnNumber>
+          <Name>..\APP\app_cfg.h</Name>
+          <ColumnNumber>29</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>19</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>..\BSP\ledDis.c</Name>
-          <ColumnNumber>1</ColumnNumber>
-          <TopLine>8</TopLine>
-          <CurrentLine>8</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>..\BSP\ledDis.h</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>10</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>..\APP\app.h</Name>
-          <ColumnNumber>16</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>8</CurrentLine>
+          <CurrentLine>22</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>

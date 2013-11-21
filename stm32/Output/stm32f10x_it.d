@@ -27,3 +27,4 @@
 ..\Output\stm32f10x_it.o: ..\BSP\ledDis.h
 ..\Output\stm32f10x_it.o: ..\BSP\adc.h
 ..\Output\stm32f10x_it.o: ..\BSP\exti.h
+..\Output\stm32f10x_it.o: ..\BSP\flash.h

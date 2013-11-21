@@ -32,11 +32,6 @@ extern OS_EVENT* adc_MBOX;
 extern OS_EVENT* key_SEM;
 extern OS_EVENT* keyDis_SEM;
 
-/* flash */
-u32 cnt = 0;
-char *data="111 ";
-int dataRead;
-
 /* 全局变量 */
 unsigned int sum=0;
 
@@ -46,8 +41,6 @@ static OS_STK ledDis_task_stk[LEDDIS_TASK_STK_SIZE];
 static OS_STK adc1_task_stk[ADC1_TASK_STK_SIZE];
 static OS_STK exti_task_stk[EXTI_TASK_STK_SIZE];
 static OS_STK calculate_task_stk[CALCULATE_TASK_STK_SIZE];
-
-static OS_STK flash_task_stk[FLASH_TASK_STK_SIZE];
 
 void Task_START(void *p_arg)
 {
@@ -73,9 +66,6 @@ void Task_START(void *p_arg)
 
 	OSTaskCreate(Task_CALCULATE,(void *)0,
 		&calculate_task_stk[CALCULATE_TASK_STK_SIZE-1],CALCULATE_TASK_PRIO);
-
-	OSTaskCreate(Task_FLASH,(void *)0,
-		&flash_task_stk[FLASH_TASK_STK_SIZE-1],FLASH_TASK_PRIO);
 
 	while(1)
 	{
@@ -112,7 +102,7 @@ void Task_USART1(void *p_arg)
 
 		OSSemPend(key_SEM,0,&errkey);
 		num = *(unsigned char*)OSMboxPend(adc_MBOX,0,&err);
-		printf(" hello: %d,%d",num,dataRead);
+		printf(" hello: %d",num);
 		OSTimeDlyHMSM(0,0,0,500);
 	}
 }
@@ -187,32 +177,6 @@ void Task_CALCULATE(void *p_arg)
 
 		sum=sum+ADC_ConvertedValueLocal;
 		OSMboxPost(adc_MBOX,(void *)&sum);
-		OSTimeDlyHMSM(0,0,0,500);
-	}
-}
-
-void Task_FLASH(void *p_arg)
-{
-	(void)p_arg;	//'p_arg'没有用到，防止编译器警告
-
-	while(1)
-	{
-		/* 解锁 FLASH 控制块*/
-		FLASH_Unlock();
-		/* 清除一些标志位 */
-		FLASH_ClearFlag(FLASH_FLAG_EOP | FLASH_FLAG_PGERR | FLASH_FLAG_WRPRTERR);
-		/* 擦除起始地址为 0x8002000 的 FLASH 页 */
-		FLASH_ErasePage(0x8002000);
-		do											   
-		{
-			FLASH_ProgramHalfWord((0x8002000 + cnt * 2), data[cnt]);
-			cnt++;
-		}while(data[cnt] != ' ');
-		/* 锁定 FLASH 控制块*/
-		FLASH_Lock();
-		OSTimeDlyHMSM(0,0,0,500);
-
-		dataRead=ReadHalfWord(0x8002000);
 		OSTimeDlyHMSM(0,0,0,500);
 	}
 }

@@ -27,4 +27,3 @@
 ..\Output\main.o: ..\BSP\ledDis.h
 ..\Output\main.o: ..\BSP\adc.h
 ..\Output\main.o: ..\BSP\exti.h
-..\Output\main.o: ..\BSP\flash.h

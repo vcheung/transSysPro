@@ -9,6 +9,5 @@ void Task_LEDDIS(void *p_arg);
 void Task_ADC1(void *p_arg);
 void Task_EXTI(void *p_arg);
 void Task_CALCULATE(void *p_arg);
-void Task_FLASH(void *p_arg);
 
 #endif //__APP_H__

@@ -10,6 +10,7 @@
 #define	SC		(0x01 << 5)					   //数码管C段的编码
 #define	SB		(0x01 << 6)					   //数码管B段的编码
 #define	SA		(0x01 << 7)					   //数码管A段的编码
+
 const u8 LEDData[] =
 {
 	SA |SB |SC | SD |SE |SF,		    // 0的编码
@@ -35,24 +36,11 @@ extern OS_EVENT* keyDis_SEM;
 
 /* eeprom */
 #define  EEP_Firstpage      0x00
+#define  EEP_Secondpage     0x01
 //u8 I2c_Buf_Write[256];
 u8 I2c_Buf_Read[256];
 u8 *I2c_Buf_Write;
 //u8 *I2c_Buf_Read;
-
-/* 结构体 */
-struct carData
-{
-//	char name[8];
-//	char ID[10];
-//	char carID[8];
-
-	char *name;
-	char *ID;
-	char *carID;
-	int stWeight;
-	int weight;
-};
 
 /* 全局变量 */
 unsigned int sum=0;

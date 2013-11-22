@@ -29,4 +29,6 @@
 ..\Output\app.o: ..\BSP\adc.h
 ..\Output\app.o: ..\BSP\exti.h
 ..\Output\app.o: ..\BSP\i2c_ee.h
+..\Output\app.o: ..\BSP\data.h
+..\Output\app.o: ..\USER\includes.h
 ..\Output\app.o: ..\APP\myConfig.h

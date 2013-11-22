@@ -4,9 +4,9 @@
 /*******	设置任务优先级	*******/
 #define	STARTUP_TASK_PRIO		4
 #define	LED_TASK_PRIO			5
-#define	USART1_TASK_PRIO		6
+#define	USART1_TASK_PRIO		8
 #define	LEDDIS_TASK_PRIO		7
-#define	ADC1_TASK_PRIO			8
+#define	ADC1_TASK_PRIO			6
 #define	EXTI_TASK_PRIO			3
 #define	CALCULATE_TASK_PRIO		9
 

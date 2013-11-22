@@ -16,4 +16,6 @@
 #include "exti.h"  	//°´¼üÖÐ¶Ï
 #include "i2c_ee.h"	//eeprom
 
+#include "data.h"
+
 #endif	//__INCLUDE_H__

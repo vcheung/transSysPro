@@ -29,3 +29,5 @@
 ..\Output\bsp.o: ..\BSP\adc.h
 ..\Output\bsp.o: ..\BSP\exti.h
 ..\Output\bsp.o: ..\BSP\i2c_ee.h
+..\Output\bsp.o: ..\BSP\data.h
+..\Output\bsp.o: ..\USER\includes.h

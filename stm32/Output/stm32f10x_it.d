@@ -30,3 +30,5 @@
 ..\Output\stm32f10x_it.o: ..\BSP\adc.h
 ..\Output\stm32f10x_it.o: ..\BSP\exti.h
 ..\Output\stm32f10x_it.o: ..\BSP\i2c_ee.h
+..\Output\stm32f10x_it.o: ..\BSP\data.h
+..\Output\stm32f10x_it.o: ..\USER\includes.h

@@ -10,13 +10,13 @@ struct carData
 //	char ID[10];
 //	char carID[8];
 
-	u8 *name;
-	u8 *ID;
-	u8 *carID;
-	u8 stWeight;
-	u8 weight;
+	char name[8];
+	char ID[10];
+	char carID[8];
+	char stWeight;
+	char weight;
 };
 
-u8 *save_in_buffer(struct carData CAR);
+void save_in_buffer(struct carData CAR, char ADweight);
 
 #endif

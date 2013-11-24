@@ -1,7 +1,9 @@
 #include "includes.h"
 #include "myConfig.h"
+#include <string.h>
 
-u8* SENDData;
+extern char sendData[50];
+
 static OS_STK led_task_stk[LED_TASK_STK_SIZE];	//定义栈
 static OS_STK usart1_task_stk[USART1_TASK_STK_SIZE];	
 static OS_STK ledDis_task_stk[LEDDIS_TASK_STK_SIZE];
@@ -68,81 +70,32 @@ void Task_USART1(void *p_arg)
 	(void)p_arg;	//'p_arg'没有用到，防止编译器警告
 	while(1)
 	{	
-		unsigned char errkey;
-		unsigned char num,err;
+		unsigned char errkey, err;
+		char *weight;
 		u16 i;
 
-		car1.name= "张三" ;
-		car1.ID = "0123456789";
-		car1.carID = "粤E12345";
-		car1.stWeight = 10;
-		car1.weight = 5;
-
-//		SENDData= save_in_buffer(car1);  仍然有问题
-
 		OSSemPend(key_SEM,0,&errkey);
-		num = *(unsigned char*)OSMboxPend(adc_MBOX,0,&err);
-		printf(" hello: %d",num);
-		OSTimeDlyHMSM(0,0,0,500);
+		//将car1数据保存至buffer并串口输出
+		weight = (char*)OSMboxPend(adc_MBOX,0,&err);
 		
-		/* 读写EEPROM */
-	    I2c_Buf_Write = car1.name;
-		printf("写入的数据\n\r");
-	    for ( i=0; i<=255; i++ ) //填充缓冲
-	  	{   
-		    printf("%c", I2c_Buf_Write[i]);
-	   	}
-	
+		save_in_buffer(car1,*weight);
+		
+		/* 读写EEPROM */	
 	  	//将I2c_Buf_Write中顺序递增的数据写入EERPOM中 
-		I2C_EE_BufferWrite(I2c_Buf_Write, EEP_Firstpage, 256);
+		I2C_EE_BufferWrite((u8 *)sendData, EEP_Firstpage, 256);
 			 
 		OSTimeDlyHMSM(0,0,0,500);
 
-	  	printf("\n\r读出的数据\n\r");
+	  	printf("\n\r读出eeprom的数据\n\r");
 	  	//将EEPROM读出数据顺序保持到I2c_Buf_Read中 
 		I2C_EE_BufferRead(I2c_Buf_Read, EEP_Firstpage, 256); 
 	
 	  	//将I2c_Buf_Read中的数据通过串口打印
-		for (i=0; i<256; i++)
+		for (i=0; i<=50; i++)
 		{	
-//			if(I2c_Buf_Read[i] != I2c_Buf_Write[i])
-//			{
-//				printf("0x%02X ", I2c_Buf_Read[i]);
-//				printf("错误:I2C EEPROM写入与读出的数据不一致\n\r");
-//				return;
-//			}
 		    printf("%c", I2c_Buf_Read[i]);
 	    }
 		OSTimeDlyHMSM(0,0,0,500);
-
-		/* 读写EEPROM */
-	    I2c_Buf_Write = car1.ID;
-		printf("写入的数据\n\r");
-	    for ( i=0; i<=255; i++ ) //填充缓冲
-	  	{   
-		    printf("%c", I2c_Buf_Write[i]);
-	   	}
-	
-	  	//将I2c_Buf_Write中顺序递增的数据写入EERPOM中 
-		I2C_EE_BufferWrite(I2c_Buf_Write, EEP_Secondpage, 256);
-			 
-		OSTimeDlyHMSM(0,0,0,500);
-
-	  	printf("\n\r读出的数据\n\r");
-	  	//将EEPROM读出数据顺序保持到I2c_Buf_Read中 
-		I2C_EE_BufferRead(I2c_Buf_Read, EEP_Secondpage, 256); 
-	
-	  	//将I2c_Buf_Read中的数据通过串口打印
-		for (i=0; i<256; i++)
-		{	
-//			if(I2c_Buf_Read[i] != I2c_Buf_Write[i])
-//			{
-//				printf("0x%02X ", I2c_Buf_Read[i]);
-//				printf("错误:I2C EEPROM写入与读出的数据不一致\n\r");
-//				return;
-//			}
-		    printf("%c", I2c_Buf_Read[i]);
-	    }
 	}
 }
 
@@ -191,7 +144,7 @@ void Task_ADC1(void *p_arg)
 	while(1)
 	{
 		 ADC_ConvertedValueLocal =(float) ADC_ConvertedValue/4096*10;
-//		 OSMboxPost(adc_MBOX,(void *)&ADC_ConvertedValueLocal);
+		 OSMboxPost(adc_MBOX,&ADC_ConvertedValueLocal);
 		 OSTimeDlyHMSM(0,0,0,500);
 	}
 }
@@ -215,7 +168,6 @@ void Task_CALCULATE(void *p_arg)
 		OSSemPend(keyDis_SEM,0,&errkey);
 
 		sum=sum+ADC_ConvertedValueLocal;
-		OSMboxPost(adc_MBOX,(void *)&sum);
 		OSTimeDlyHMSM(0,0,0,500);
 	}
 }

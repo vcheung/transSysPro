@@ -39,11 +39,11 @@ extern OS_EVENT* keyDis_SEM;
 #define  EEP_Secondpage     0x01
 //u8 I2c_Buf_Write[256];
 u8 I2c_Buf_Read[256];
-u8 *I2c_Buf_Write;
+u8 I2c_Buf_Write[256];
 //u8 *I2c_Buf_Read;
 
 /* 全局变量 */
 unsigned int sum=0;
-struct carData car1;
+struct carData car1={ "张三" , "0123456789" , "粤E12345" , 10 };
 
 #endif

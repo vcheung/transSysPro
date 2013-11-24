@@ -32,3 +32,4 @@
 ..\Output\app.o: ..\BSP\data.h
 ..\Output\app.o: ..\USER\includes.h
 ..\Output\app.o: ..\APP\myConfig.h
+..\Output\app.o: C:\Keil\ARM\RV31\INC\string.h

@@ -75,16 +75,16 @@ void Task_LED(void *p_arg)
 	}
 }
 
-/* 按键按下，数据存入缓冲，写入EEPROM */
+/* 按键按下，写入EEPROM */
 void Task_USART1(void *p_arg)
 {
 	(void)p_arg;	//'p_arg'没有用到，防止编译器警告
 	while(1)
 	{	
 		unsigned char errkey, err;
-		u16 i;
+//		u16 i;
 		
-		printf("等待A8");
+//		printf("等待A8");
 
 		OSSemPend(key_SEM,0,&errkey);
 
@@ -98,16 +98,16 @@ void Task_USART1(void *p_arg)
 			 
 		OSTimeDlyHMSM(0,0,0,500);
 
-	  	printf("\n\r读出eeprom的数据\n\r");
+//	  	printf("\n\r读出eeprom的数据\n\r");
 	  	//将EEPROM读出数据顺序保持到I2c_Buf_Read中 
-		I2C_EE_BufferRead(I2c_Buf_Read, EEP_Firstpage, 256); 
+//		I2C_EE_BufferRead(I2c_Buf_Read, EEP_Firstpage, 256); 
 	
 	  	//将I2c_Buf_Read中的数据通过串口打印
-		for (i=0; i<=50; i++)
-		{	
-		    printf("%c", I2c_Buf_Read[i]);
-	    }
-		OSTimeDlyHMSM(0,0,0,500);
+//		for (i=0; i<=50; i++)
+//		{	
+//		    printf("%c", I2c_Buf_Read[i]);
+//	    }
+//		OSTimeDlyHMSM(0,0,0,500);
 	}
 }
 
@@ -119,34 +119,37 @@ void Task_A8CONNECT(void *p_arg)
 	while(1)
 	{
 		unsigned char errA8;
-  		unsigned int i=0;
-		printf("A8_wait");
+//		unsigned int i=0;
+//		printf("A8_wait");
 //		for(i=0;i<10;i++)
 //		{
 //			printf("%c",RxBuffer1[i]);
 //		}
 		OSSemPend(A8_SEM,0,&errA8);
-		printf("A8_in");
-  		
-   		if(RxBuffer1[0]!=0x01)
-   		{
-   			for(i=0;i<10;i++)
- 				RxBuffer1[i]=0;
-   			RxCounter1=0;
-   		}
+//		printf("A8_in");
+//  		
+//   		if(RxBuffer1[0]!=0x01)
+//   		{
+//   			for(i=0;i<10;i++)
+// 				RxBuffer1[i]=0;
+//   			RxCounter1=0;
+//   		}
 		CRC16((unsigned char *)RxBuffer1,5);
 			
-		printf("16H:%c,16L:%c",crc16H,crc16L);
-		
-		for(i=0;i<10;i++)
-			printf("%c",RxBuffer1[i]);
+//		printf("16H:%c,16L:%c",crc16H,crc16L);
+//		
+//		for(i=0;i<10;i++)
+//			printf("%c",RxBuffer1[i]);
 
 		if(crc16L==RxBuffer1[6]&&crc16H==RxBuffer1[5])	  
-		{	
-//			Receiver_Control=RxBuffer1[2];
-//  			Receiver_Spare=RxBuffer1[3];
-//  			save_in_buffer(car1,*weight);
-			printf("OK!886");
+		{
+			//将EEPROM读出数据顺序保持到I2c_Buf_Read中
+			I2C_EE_BufferRead(I2c_Buf_Read, EEP_Firstpage, 256); 
+
+			Receiver_Control=RxBuffer1[2];
+  			Receiver_Spare=RxBuffer1[3];
+//			printf("OK!886");
+			replyA8();
 		}		
 		OSTimeDlyHMSM(0,0,0,500);
 	}

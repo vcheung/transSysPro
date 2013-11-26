@@ -3,8 +3,10 @@
 #include <QDateTime>
 #include <QTimer>
 #include <QDebug>
+#include "dowithserdata.h"
 
 Widget *pMainWnd = NULL;
+Widget *pCommonPoint;
 
 Widget::Widget(QWidget *parent) :
     QWidget(parent),
@@ -12,11 +14,17 @@ Widget::Widget(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    pMainWnd = pCommonPoint = this;
+
     mageSecretInput = new secretInput;
     workW = new workwidget(0);
     magWorkW = new workwidget(1);
 
+    //串口
+    pSer_Com = NULL;
     serialManage();
+    //串口数据解析
+    pDoWithSerData = new dowithserdata;
 
     QTimer *WorkTimer = new QTimer;
     WorkTimer->start(1000);
@@ -87,14 +95,14 @@ void Widget::serialManage()
         if(pSer_Com == NULL)
             return;
         if(!pSer_Com->Initcom(ComDataArriveOK,"COM2",
-                              BAUD115200,DATA_8,PAR_NONE,STOP_1,100))
+                              BAUD115200,DATA_8,PAR_NONE,STOP_1,200))
             qDebug()<<"COM open fail!";
         else
         {
             qDebug()<<"serial suceess";
             QTimer *TimerSerData = new QTimer;
+            TimerSerData->start(5000);
             connect(TimerSerData,SIGNAL(timeout()),this,SLOT(SendModDataSlot()));
-            TimerSerData->start(200);
         }
     }
 }
@@ -110,13 +118,14 @@ void Widget::SendModDataSlot()
 
 void Widget::ComDataArriveOK(char *DataBuff,ulong m_ulen)
 {
-    if(pMainWnd->DataCrcCheck(DataBuff,m_ulen)&&pMainWnd!=NULL)
+    if(pMainWnd->DataCrcCheck(DataBuff,m_ulen)&& pMainWnd!=NULL)
     {
         Comdata mData;
         memset(&mData,0,sizeof(Comdata));
         memcpy(mData.DataBuff,DataBuff,m_ulen);
         mData.Len=m_ulen;
         PutDataIntoQueuen(&mData);
+        qDebug()<<"put into buffer";
     }
 }
 
@@ -199,5 +208,5 @@ void Widget::SendModData(qint64 Data,qint64 IsSaveState,int Counter)
     //                 for(int i =0;i<7;i++)
     //                     qDebug("%d",(uchar)SendData[i]);
     pMainWnd->pSer_Com->SendData(SendData,10);
-    qDebug("%c",SendData[5]);
+    qDebug()<<"send modData";
 }

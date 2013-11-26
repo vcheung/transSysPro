@@ -25,6 +25,7 @@ public:
     workwidget *workW;
     workwidget *magWorkW;
     secretInput *mageSecretInput;
+    dowithserdata *pDoWithSerData;
 
     void serialManage();
     serial *pSer_Com;

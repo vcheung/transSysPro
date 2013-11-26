@@ -15,5 +15,6 @@ INPUT(
 ./release\moc_secretinput.o
 ./release\moc_myinputpanel.o
 ./release\moc_qextserialbase.o
+./release\moc_dowithserdata.o
 ./release\moc_win_qextserialport.o
 );

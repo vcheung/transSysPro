@@ -222,7 +222,7 @@
       <ColumnNumber>21</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>178</TopLine>
-      <CurrentLine>178</CurrentLine>
+      <CurrentLine>194</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\stm32f10x_it.c</PathWithFileName>
       <FilenameWithoutPath>stm32f10x_it.c</FilenameWithoutPath>
@@ -406,12 +406,12 @@
       <GroupNumber>5</GroupNumber>
       <FileNumber>15</FileNumber>
       <FileType>1</FileType>
-      <tvExp>1</tvExp>
+      <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>13</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>115</TopLine>
-      <CurrentLine>128</CurrentLine>
+      <TopLine>114</TopLine>
+      <CurrentLine>114</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\APP\app.c</PathWithFileName>
       <FilenameWithoutPath>app.c</FilenameWithoutPath>
@@ -525,12 +525,12 @@
       <GroupNumber>6</GroupNumber>
       <FileNumber>23</FileNumber>
       <FileType>1</FileType>
-      <tvExp>0</tvExp>
+      <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>21</ColumnNumber>
+      <ColumnNumber>30</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>31</TopLine>
-      <CurrentLine>31</CurrentLine>
+      <TopLine>34</TopLine>
+      <CurrentLine>46</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\BSP\data.c</PathWithFileName>
       <FilenameWithoutPath>data.c</FilenameWithoutPath>
@@ -748,9 +748,35 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>F:\GitHub\transSysPro\stm32\APP\myConfig.h</PathWithFilename>
-    <TopLine>30</TopLine>
-    <CurrentLine>30</CurrentLine>
+    <PathWithFilename>F:\GitHub\transSysPro\stm32\BSP\data.h</PathWithFilename>
+    <TopLine>1</TopLine>
+    <CurrentLine>15</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
+
+  <AlienFiles>
+    <PathWithFilename>F:\GitHub\transSysPro\stm32\APP\app.h</PathWithFilename>
+    <TopLine>1</TopLine>
+    <CurrentLine>12</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -800,9 +826,9 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\GitHub\transSysPro\stm32\APP\app.h</PathWithFilename>
-    <TopLine>1</TopLine>
-    <CurrentLine>12</CurrentLine>
+    <PathWithFilename>F:\GitHub\transSysPro\stm32\APP\myConfig.h</PathWithFilename>
+    <TopLine>30</TopLine>
+    <CurrentLine>43</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -2420,27 +2446,27 @@
       <Documents>
         <Doc>
           <Name>..\BSP\data.c</Name>
-          <ColumnNumber>21</ColumnNumber>
-          <TopLine>31</TopLine>
-          <CurrentLine>31</CurrentLine>
+          <ColumnNumber>30</ColumnNumber>
+          <TopLine>34</TopLine>
+          <CurrentLine>46</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\stm32f10x_it.c</Name>
           <ColumnNumber>21</ColumnNumber>
           <TopLine>178</TopLine>
-          <CurrentLine>178</CurrentLine>
+          <CurrentLine>194</CurrentLine>
         </Doc>
         <Doc>
           <Name>..\APP\app.c</Name>
-          <ColumnNumber>3</ColumnNumber>
-          <TopLine>139</TopLine>
-          <CurrentLine>139</CurrentLine>
+          <ColumnNumber>13</ColumnNumber>
+          <TopLine>114</TopLine>
+          <CurrentLine>114</CurrentLine>
         </Doc>
         <Doc>
           <Name>..\APP\myConfig.h</Name>
-          <ColumnNumber>0</ColumnNumber>
+          <ColumnNumber>18</ColumnNumber>
           <TopLine>30</TopLine>
-          <CurrentLine>30</CurrentLine>
+          <CurrentLine>43</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\main.c</Name>
@@ -2459,6 +2485,12 @@
           <ColumnNumber>50</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>12</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\BSP\data.h</Name>
+          <ColumnNumber>14</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>15</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>

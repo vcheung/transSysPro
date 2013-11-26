@@ -13,6 +13,7 @@ class serial
 {
 public:
     serial();
+    ~serial();
 
 private:
 //    Posix_QextSerialPort *m_Com;  //´´½¨´®¿Ú

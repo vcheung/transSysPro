@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'workwidget.h'
 **
-** Created: Tue Nov 26 10:06:52 2013
+** Created: Tue Nov 26 20:51:19 2013
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.7.0)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,26 +23,29 @@ static const uint qt_meta_data_workwidget[] = {
        5,       // revision
        0,       // classname
        0,    0, // classinfo
-       3,   14, // methods
+       5,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       1,       // signalCount
+       2,       // signalCount
 
  // signals: signature, parameters, type, tag, flags
       12,   11,   11,   11, 0x05,
+      32,   11,   11,   11, 0x05,
 
  // slots: signature, parameters, type, tag, flags
-      32,   11,   11,   11, 0x0a,
-      45,   11,   11,   11, 0x08,
+      51,   11,   11,   11, 0x0a,
+      64,   11,   11,   11, 0x0a,
+      81,   11,   11,   11, 0x08,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_workwidget[] = {
     "workwidget\0\0switchToManSignal()\0"
-    "updatetime()\0on_returnWork_clicked()\0"
+    "updateShowSignal()\0updatetime()\0"
+    "updateShowSlot()\0on_returnWork_clicked()\0"
 };
 
 const QMetaObject workwidget::staticMetaObject = {
@@ -75,11 +78,13 @@ int workwidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: switchToManSignal(); break;
-        case 1: updatetime(); break;
-        case 2: on_returnWork_clicked(); break;
+        case 1: updateShowSignal(); break;
+        case 2: updatetime(); break;
+        case 3: updateShowSlot(); break;
+        case 4: on_returnWork_clicked(); break;
         default: ;
         }
-        _id -= 3;
+        _id -= 5;
     }
     return _id;
 }
@@ -88,5 +93,11 @@ int workwidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 void workwidget::switchToManSignal()
 {
     QMetaObject::activate(this, &staticMetaObject, 0, 0);
+}
+
+// SIGNAL 1
+void workwidget::updateShowSignal()
+{
+    QMetaObject::activate(this, &staticMetaObject, 1, 0);
 }
 QT_END_MOC_NAMESPACE

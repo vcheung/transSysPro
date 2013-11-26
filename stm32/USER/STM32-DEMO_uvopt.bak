@@ -205,10 +205,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>25</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>18</TopLine>
+      <CurrentLine>18</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -219,10 +219,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>3</ColumnNumber>
+      <ColumnNumber>21</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>179</TopLine>
-      <CurrentLine>192</CurrentLine>
+      <TopLine>178</TopLine>
+      <CurrentLine>194</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\stm32f10x_it.c</PathWithFileName>
       <FilenameWithoutPath>stm32f10x_it.c</FilenameWithoutPath>
@@ -406,12 +406,12 @@
       <GroupNumber>5</GroupNumber>
       <FileNumber>15</FileNumber>
       <FileType>1</FileType>
-      <tvExp>1</tvExp>
+      <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>18</ColumnNumber>
+      <ColumnNumber>13</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>67</TopLine>
-      <CurrentLine>67</CurrentLine>
+      <TopLine>78</TopLine>
+      <CurrentLine>93</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\APP\app.c</PathWithFileName>
       <FilenameWithoutPath>app.c</FilenameWithoutPath>
@@ -525,12 +525,12 @@
       <GroupNumber>6</GroupNumber>
       <FileNumber>23</FileNumber>
       <FileType>1</FileType>
-      <tvExp>0</tvExp>
+      <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>21</ColumnNumber>
+      <ColumnNumber>22</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>7</TopLine>
-      <CurrentLine>9</CurrentLine>
+      <TopLine>31</TopLine>
+      <CurrentLine>31</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\BSP\data.c</PathWithFileName>
       <FilenameWithoutPath>data.c</FilenameWithoutPath>
@@ -746,6 +746,110 @@
       <FilenameWithoutPath>os_dbg.c</FilenameWithoutPath>
     </File>
   </Group>
+
+  <AlienFiles>
+    <PathWithFilename>F:\GitHub\transSysPro\stm32\BSP\data.h</PathWithFilename>
+    <TopLine>1</TopLine>
+    <CurrentLine>21</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
+
+  <AlienFiles>
+    <PathWithFilename>F:\GitHub\transSysPro\stm32\APP\app.h</PathWithFilename>
+    <TopLine>1</TopLine>
+    <CurrentLine>12</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
+
+  <AlienFiles>
+    <PathWithFilename>F:\GitHub\transSysPro\stm32\APP\app_cfg.h</PathWithFilename>
+    <TopLine>1</TopLine>
+    <CurrentLine>22</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
+
+  <AlienFiles>
+    <PathWithFilename>F:\GitHub\transSysPro\stm32\APP\myConfig.h</PathWithFilename>
+    <TopLine>30</TopLine>
+    <CurrentLine>43</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
 
   <WinLayout>
     <sActiveDebugView>Default</sActiveDebugView>
@@ -2338,25 +2442,55 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>1</ActiveTab>
+      <ActiveTab>0</ActiveTab>
       <Documents>
         <Doc>
           <Name>..\BSP\data.c</Name>
-          <ColumnNumber>21</ColumnNumber>
-          <TopLine>7</TopLine>
-          <CurrentLine>9</CurrentLine>
+          <ColumnNumber>22</ColumnNumber>
+          <TopLine>31</TopLine>
+          <CurrentLine>31</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\stm32f10x_it.c</Name>
-          <ColumnNumber>3</ColumnNumber>
-          <TopLine>179</TopLine>
-          <CurrentLine>192</CurrentLine>
+          <ColumnNumber>21</ColumnNumber>
+          <TopLine>178</TopLine>
+          <CurrentLine>194</CurrentLine>
         </Doc>
         <Doc>
           <Name>..\APP\app.c</Name>
+          <ColumnNumber>13</ColumnNumber>
+          <TopLine>78</TopLine>
+          <CurrentLine>93</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\APP\myConfig.h</Name>
           <ColumnNumber>18</ColumnNumber>
-          <TopLine>67</TopLine>
-          <CurrentLine>67</CurrentLine>
+          <TopLine>30</TopLine>
+          <CurrentLine>43</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>.\main.c</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>18</TopLine>
+          <CurrentLine>18</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\APP\app_cfg.h</Name>
+          <ColumnNumber>8</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>22</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\APP\app.h</Name>
+          <ColumnNumber>50</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>12</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\BSP\data.h</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>21</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>

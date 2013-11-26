@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'myinputpanelform.ui'
 **
-** Created: Tue Nov 19 14:42:35 2013
+** Created: Tue Nov 26 15:54:47 2013
 **      by: Qt User Interface Compiler version 4.7.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!

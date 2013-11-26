@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'widget.ui'
 **
-** Created: Tue Nov 19 12:57:19 2013
+** Created: Tue Nov 26 15:54:46 2013
 **      by: Qt User Interface Compiler version 4.7.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -65,13 +65,15 @@ public:
         label->setAlignment(Qt::AlignCenter);
         manaBtn = new QPushButton(Widget);
         manaBtn->setObjectName(QString::fromUtf8("manaBtn"));
-        manaBtn->setGeometry(QRect(220, 300, 130, 30));
+        manaBtn->setGeometry(QRect(220, 300, 130, 40));
         QFont font3;
+        font3.setFamily(QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221"));
+        font3.setPointSize(11);
         font3.setItalic(false);
         manaBtn->setFont(font3);
         visiBtn = new QPushButton(Widget);
         visiBtn->setObjectName(QString::fromUtf8("visiBtn"));
-        visiBtn->setGeometry(QRect(450, 300, 130, 30));
+        visiBtn->setGeometry(QRect(450, 300, 130, 40));
         visiBtn->setFont(font3);
 
         retranslateUi(Widget);

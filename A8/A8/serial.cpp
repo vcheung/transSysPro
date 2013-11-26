@@ -1,10 +1,15 @@
 #include "serial.h"
+#include <QDebug>
 
 serial::serial()
 {
     pThread = NULL;
     m_curFun = NULL;
     m_bIsOpenFlag = false;
+}
+
+serial::~serial()
+{
 }
 
 bool serial::Initcom(ComdataArrive m_pFun, QString m_sCom,
@@ -26,6 +31,7 @@ bool serial::Initcom(ComdataArrive m_pFun, QString m_sCom,
         m_Com->setFlowControl(m_eFlowtype);
         m_Com->setTimeout(m_lTimeOut);
         startSerThread();   //打开串口线程
+//        qDebug()<<"readed";
     }
     return m_bIsOpenFlag;
 }
@@ -43,9 +49,11 @@ void serial::ReadData()
 {
     if(m_Com!=NULL)
     {
+//        qDebug()<<"go read";
         if(m_Com->bytesAvailable() >0)
         {
             QByteArray m_cBuff=m_Com->readAll();
+            qDebug()<<"read stm32";
             //#m_Com->readAll()_Reads all available data from the device, and returns it as a QByteArray.(from F1)
 
             //qDebug()<<"*******原始数据***********"<<m_cBuff;
@@ -78,5 +86,6 @@ void serialThread::run()
     {
         if(pSerCom!=NULL)
             pSerCom->ReadData();
+//            qDebug()<<"read data";
     }
 }

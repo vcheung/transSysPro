@@ -5,6 +5,11 @@
 #include "workwidget.h"
 #include "secretinput.h"
 #include "confi.h"
+//#include "posix_qextserialport.h"
+#include "win_qextserialport.h"
+#include <QTimer>
+#include "serial.h"
+#include "dowithserdata.h"
 
 namespace Ui {
 class Widget;
@@ -21,15 +26,20 @@ public:
     workwidget *magWorkW;
     secretInput *mageSecretInput;
 
+    void serialManage();
+    serial *pSer_Com;
+    static void ComDataArriveOK(char *DataBuff,ulong m_ulen);
+    ulong CRCCheck(char *crcBuff, ulong size);//CRCÐ£Ñé
+    bool DataCrcCheck(char *DataBuff, ulong m_ulen);
+    void SendModData(qint64 Data,qint64 IsSaveState,int Counter);
+
 public slots:
     void updatetime();
     void magWorkWShow();
     void workWShow();
     void toSecret();
     void manShow();
-
-private:
-    Ui::Widget *ui;
+    void SendModDataSlot();
 
 signals:
     void switchToWorkWSignal();
@@ -38,6 +48,9 @@ signals:
 private slots:
     void on_visiBtn_clicked();
     void on_manaBtn_clicked();
+
+private:
+    Ui::Widget *ui;
 };
 
 #endif // WIDGET_H

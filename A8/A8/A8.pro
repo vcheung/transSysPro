@@ -17,14 +17,22 @@ SOURCES += main.cpp\
     workwidget.cpp \
     myinputpanelcontext.cpp \
     secretinput.cpp \
-    myinputpanel.cpp
+    myinputpanel.cpp \
+    qextserialbase.cpp \
+    serial.cpp \
+    dowithserdata.cpp \
+    win_qextserialport.cpp
 
 HEADERS  += widget.h \
     workwidget.h \
     myinputpanelcontext.h \
     secretinput.h \
     myinputpanel.h \
-    confi.h
+    confi.h \
+    qextserialbase.h \
+    serial.h \
+    dowithserdata.h \
+    win_qextserialport.h
 
 FORMS    += widget.ui \
     workwidget.ui \

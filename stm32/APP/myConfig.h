@@ -44,6 +44,10 @@ u8 I2c_Buf_Write[256];
 
 /* 全局变量 */
 unsigned int sum=0;
+char *weight;
 struct carData car1={ "张三" , "0123456789" , "粤E12345" , 10 };
+
+/* A8通信 */
+extern OS_EVENT* A8_SEM;
 
 #endif

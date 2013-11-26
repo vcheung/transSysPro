@@ -31,3 +31,4 @@
 ..\Output\main.o: ..\BSP\i2c_ee.h
 ..\Output\main.o: ..\BSP\data.h
 ..\Output\main.o: ..\USER\includes.h
+..\Output\main.o: ..\BSP\verify.h

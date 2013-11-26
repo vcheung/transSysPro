@@ -5,9 +5,15 @@ INPUT(
 ./release\myinputpanelcontext.o
 ./release\secretinput.o
 ./release\myinputpanel.o
+./release\qextserialbase.o
+./release\serial.o
+./release\dowithserdata.o
+./release\win_qextserialport.o
 ./release\moc_widget.o
 ./release\moc_workwidget.o
 ./release\moc_myinputpanelcontext.o
 ./release\moc_secretinput.o
 ./release\moc_myinputpanel.o
+./release\moc_qextserialbase.o
+./release\moc_win_qextserialport.o
 );

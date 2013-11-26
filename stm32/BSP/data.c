@@ -1,10 +1,13 @@
 #include "data.h"
-char sendData[50];
+unsigned char sendData[50];
 
 void save_in_buffer(struct carData CAR, char ADweight)
 {
 	u16 i;
 	unsigned char count=0;
+
+	sendData[count++]=0x01;
+
 	sendData[count++]=CAR.name[0];
 	sendData[count++]=CAR.name[1];
 	sendData[count++]=CAR.name[2];
@@ -37,6 +40,11 @@ void save_in_buffer(struct carData CAR, char ADweight)
 	sendData[count++]=CAR.stWeight;
 	
 	sendData[count++]=ADweight;
+
+	CRC16(sendData,count);
+
+	sendData[count++]=crc16H;						
+	sendData[count++]=crc16L;
 
 	printf("写入buffer的数据\n\r");
     for ( i=0; i<=50; i++ ) //填充缓冲

@@ -520,6 +520,11 @@
               <FileType>1</FileType>
               <FilePath>..\BSP\i2c_ee.c</FilePath>
             </File>
+            <File>
+              <FileName>data.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\data.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

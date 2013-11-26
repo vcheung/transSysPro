@@ -17,5 +17,6 @@
 #include "i2c_ee.h"	//eeprom
 
 #include "data.h"
+#include "verify.h"
 
 #endif	//__INCLUDE_H__

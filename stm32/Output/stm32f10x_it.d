@@ -32,3 +32,4 @@
 ..\Output\stm32f10x_it.o: ..\BSP\i2c_ee.h
 ..\Output\stm32f10x_it.o: ..\BSP\data.h
 ..\Output\stm32f10x_it.o: ..\USER\includes.h
+..\Output\stm32f10x_it.o: ..\BSP\verify.h

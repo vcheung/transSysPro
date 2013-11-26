@@ -35,6 +35,10 @@
 /* Private variables ---------------------------------------------------------*/
 extern OS_EVENT* key_SEM;
 extern OS_EVENT* keyDis_SEM;
+extern OS_EVENT* A8_SEM;
+
+extern char RxBuffer1[10];
+extern char RxCounter1 ;
 /* Private function prototypes -----------------------------------------------*/
 /* Private functions ---------------------------------------------------------*/
 
@@ -173,6 +177,26 @@ void EXTI0_IRQHandler(void)
 		EXTI_ClearITPendingBit(EXTI_Line0); // 清除标志位
 	    OSIntExit();
 	}  
+}
+
+/* 串口1中断 */
+void USART1_IRQHandler(void)
+{
+	OSIntEnter();
+	if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)
+	{ 	
+	    RxBuffer1[RxCounter1++] = USART_ReceiveData(USART1);
+	    if(RxCounter1 == 10)
+    	{
+      		/* Disable the USARTy Receive interrupt */
+      		USART_ITConfig(USART1, USART_IT_RXNE, DISABLE);
+			RxCounter1=0;
+			OSSemPost(A8_SEM);
+    	}
+	} 
+	
+	USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);	
+	OSIntExit();
 }
 
 /******************* (C) COPYRIGHT 2011 STMicroelectronics *****END OF FILE****/

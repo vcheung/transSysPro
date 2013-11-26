@@ -17,7 +17,7 @@ void SysTick_Init(void)
  	SystemInit();					/* 配置系统时钟为72MHz */
 	SysTick_Init();					/* 初始化并使能SysTick定时器 */
 	LED_GPIO_config();				/* LED端口初始化 */
-	USART1_Config();				/* 串口 */
+	USART1_Inter_Config();			/* 串口-中断 */
 	LEDDIS_GPIO_Configuration();	/* 数码管 */
 	ADC1_Init();					/* ADC1 */
 	EXTI_PA0_Config();				/* 按键0-中断0 */

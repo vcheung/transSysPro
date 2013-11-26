@@ -5,9 +5,15 @@ INPUT(
 ./debug\myinputpanelcontext.o
 ./debug\secretinput.o
 ./debug\myinputpanel.o
+./debug\qextserialbase.o
+./debug\serial.o
+./debug\dowithserdata.o
+./debug\win_qextserialport.o
 ./debug\moc_widget.o
 ./debug\moc_workwidget.o
 ./debug\moc_myinputpanelcontext.o
 ./debug\moc_secretinput.o
 ./debug\moc_myinputpanel.o
+./debug\moc_qextserialbase.o
+./debug\moc_win_qextserialport.o
 );

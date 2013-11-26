@@ -13,6 +13,12 @@
 **********************************************************************************/
 #include "usart1.h"
 
+void USART1_Inter_Config(void)
+{
+	USART1_Config();
+	NVIC_USART1_Configuration();
+}
+
 /*
  * 函数名：USART1_Config
  * 描述  ：USART1 GPIO 配置,工作模式配置。115200 8-N-1
@@ -46,9 +52,26 @@ void USART1_Config(void)
 	USART_InitStructure.USART_Parity = USART_Parity_No ;	//不设置奇偶校验位
 	USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;	//不采用硬件流
 	USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;	//配置双线全双工通讯
-	USART_Init(USART1, &USART_InitStructure); 
+	USART_Init(USART1, &USART_InitStructure);
+	
+	USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);	//使能中断
 
 	USART_Cmd(USART1, ENABLE);
+}
+
+void NVIC_USART1_Configuration(void)
+{
+	NVIC_InitTypeDef NVIC_InitStructure; 
+	/* Configure the NVIC Preemption Priority Bits */  
+//	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_0);
+	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_1);
+	
+	/* Enable the USARTy Interrupt */
+	NVIC_InitStructure.NVIC_IRQChannel = USART1_IRQn;	 
+	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 1;
+	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
+	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+	NVIC_Init(&NVIC_InitStructure);
 }
 
 /* 重定向：是指用户可以自己重写c的库函数，当连接器检查到用户编写了与C库函数相同名字

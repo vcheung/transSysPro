@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'widget.h'
 **
-** Created: Tue Nov 19 16:14:59 2013
+** Created: Tue Nov 26 10:06:48 2013
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.7.0)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,7 +23,7 @@ static const uint qt_meta_data_Widget[] = {
        5,       // revision
        0,       // classname
        0,    0, // classinfo
-       9,   14, // methods
+      10,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -40,8 +40,9 @@ static const uint qt_meta_data_Widget[] = {
       81,    7,    7,    7, 0x0a,
       93,    7,    7,    7, 0x0a,
      104,    7,    7,    7, 0x0a,
-     114,    7,    7,    7, 0x08,
-     135,    7,    7,    7, 0x08,
+     114,    7,    7,    7, 0x0a,
+     132,    7,    7,    7, 0x08,
+     153,    7,    7,    7, 0x08,
 
        0        // eod
 };
@@ -50,8 +51,8 @@ static const char qt_meta_stringdata_Widget[] = {
     "Widget\0\0switchToWorkWSignal()\0"
     "switchToSecretSignal()\0updatetime()\0"
     "magWorkWShow()\0workWShow()\0toSecret()\0"
-    "manShow()\0on_visiBtn_clicked()\0"
-    "on_manaBtn_clicked()\0"
+    "manShow()\0SendModDataSlot()\0"
+    "on_visiBtn_clicked()\0on_manaBtn_clicked()\0"
 };
 
 const QMetaObject Widget::staticMetaObject = {
@@ -90,11 +91,12 @@ int Widget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         case 4: workWShow(); break;
         case 5: toSecret(); break;
         case 6: manShow(); break;
-        case 7: on_visiBtn_clicked(); break;
-        case 8: on_manaBtn_clicked(); break;
+        case 7: SendModDataSlot(); break;
+        case 8: on_visiBtn_clicked(); break;
+        case 9: on_manaBtn_clicked(); break;
         default: ;
         }
-        _id -= 9;
+        _id -= 10;
     }
     return _id;
 }

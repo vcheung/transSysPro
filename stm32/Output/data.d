@@ -31,3 +31,4 @@
 ..\Output\data.o: ..\BSP\exti.h
 ..\Output\data.o: ..\BSP\i2c_ee.h
 ..\Output\data.o: ..\BSP\data.h
+..\Output\data.o: ..\BSP\verify.h

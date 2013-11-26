@@ -24,6 +24,7 @@ static OS_STK startup_task_stk[STARTUP_TASK_STK_SIZE];	//∂®“Â’ª
 OS_EVENT* adc_MBOX;
 OS_EVENT* key_SEM;
 OS_EVENT* keyDis_SEM;
+OS_EVENT* A8_SEM;
 
 int main(void)
 {

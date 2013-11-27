@@ -25,6 +25,8 @@ public slots:
 private slots:
     void on_returnWork_clicked();
 
+    void on_quit_clicked();
+
 private:
     Ui::workwidget *ui;
     int m_type;

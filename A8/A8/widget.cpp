@@ -13,6 +13,9 @@ Widget::Widget(QWidget *parent) :
     ui(new Ui::Widget)
 {
     ui->setupUi(this);
+    this->move(0,0);
+    this->setWindowFlags(Qt::FramelessWindowHint);
+    setFixedSize(800,480);
 
     pMainWnd = pCommonPoint = this;
 

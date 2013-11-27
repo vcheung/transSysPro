@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'workwidget.ui'
 **
-** Created: Tue Nov 26 15:54:46 2013
+** Created: Wed Nov 27 09:45:18 2013
 **      by: Qt User Interface Compiler version 4.7.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -42,6 +42,7 @@ public:
     QLabel *name;
     QLabel *ID;
     QLabel *ADWeight;
+    QPushButton *quit;
 
     void setupUi(QWidget *workwidget)
     {
@@ -717,6 +718,10 @@ public:
         ADWeight->setIndent(3);
         ADWeight->setOpenExternalLinks(true);
         ADWeight->setTextInteractionFlags(Qt::NoTextInteraction);
+        quit = new QPushButton(workwidget);
+        quit->setObjectName(QString::fromUtf8("quit"));
+        quit->setGeometry(QRect(0, 350, 130, 40));
+        quit->setFont(font1);
 
         retranslateUi(workwidget);
 
@@ -743,6 +748,7 @@ public:
         name->setText(QApplication::translate("workwidget", "\345\247\223 \345\220\215", 0, QApplication::UnicodeUTF8));
         ID->setText(QApplication::translate("workwidget", "\350\272\253\344\273\275\350\257\201\345\217\267\347\240\201", 0, QApplication::UnicodeUTF8));
         ADWeight->setText(QApplication::translate("workwidget", "\345\256\236\351\231\205\350\275\275\351\207\215", 0, QApplication::UnicodeUTF8));
+        quit->setText(QApplication::translate("workwidget", "\351\200\200\345\207\272", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

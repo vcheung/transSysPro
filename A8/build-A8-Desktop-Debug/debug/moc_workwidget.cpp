@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'workwidget.h'
 **
-** Created: Tue Nov 26 20:51:19 2013
+** Created: Wed Nov 27 09:45:50 2013
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.7.0)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,7 +23,7 @@ static const uint qt_meta_data_workwidget[] = {
        5,       // revision
        0,       // classname
        0,    0, // classinfo
-       5,   14, // methods
+       6,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -38,6 +38,7 @@ static const uint qt_meta_data_workwidget[] = {
       51,   11,   11,   11, 0x0a,
       64,   11,   11,   11, 0x0a,
       81,   11,   11,   11, 0x08,
+     105,   11,   11,   11, 0x08,
 
        0        // eod
 };
@@ -46,6 +47,7 @@ static const char qt_meta_stringdata_workwidget[] = {
     "workwidget\0\0switchToManSignal()\0"
     "updateShowSignal()\0updatetime()\0"
     "updateShowSlot()\0on_returnWork_clicked()\0"
+    "on_quit_clicked()\0"
 };
 
 const QMetaObject workwidget::staticMetaObject = {
@@ -82,9 +84,10 @@ int workwidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         case 2: updatetime(); break;
         case 3: updateShowSlot(); break;
         case 4: on_returnWork_clicked(); break;
+        case 5: on_quit_clicked(); break;
         default: ;
         }
-        _id -= 5;
+        _id -= 6;
     }
     return _id;
 }

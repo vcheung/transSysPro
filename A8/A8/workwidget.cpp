@@ -5,12 +5,17 @@
 #include "widget.h"
 #include "secretinput.h"
 #include <QDebug>
+#include <QApplication>
 
 workwidget::workwidget(int type, QWidget *parent) :
     QWidget(parent),
     ui(new Ui::workwidget)
 {
     ui->setupUi(this);
+    this->move(0,0);
+    this->setWindowFlags(Qt::FramelessWindowHint);
+    setFixedSize(800,480);
+
     m_type = type;
     switch(m_type)
     {
@@ -59,4 +64,10 @@ void workwidget::updateShowSlot()
     ui->stWeight->setNum((int)W_mcarDis.stWeight);
     ui->ADWeight->setNum((int)W_mcarDis.ADWeight);
 //    qDebug()<<"show car";
+
+}
+
+void workwidget::on_quit_clicked()
+{
+    qApp->exit();
 }

@@ -408,10 +408,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>20</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>182</TopLine>
-      <CurrentLine>198</CurrentLine>
+      <TopLine>167</TopLine>
+      <CurrentLine>180</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\APP\app.c</PathWithFileName>
       <FilenameWithoutPath>app.c</FilenameWithoutPath>
@@ -527,10 +527,10 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>27</ColumnNumber>
+      <ColumnNumber>10</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>34</TopLine>
-      <CurrentLine>48</CurrentLine>
+      <TopLine>46</TopLine>
+      <CurrentLine>70</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\BSP\data.c</PathWithFileName>
       <FilenameWithoutPath>data.c</FilenameWithoutPath>
@@ -828,7 +828,7 @@
   <AlienFiles>
     <PathWithFilename>F:\GitHub\transSysPro\stm32\APP\myConfig.h</PathWithFilename>
     <TopLine>30</TopLine>
-    <CurrentLine>43</CurrentLine>
+    <CurrentLine>50</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -2442,13 +2442,13 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>7</ActiveTab>
+      <ActiveTab>2</ActiveTab>
       <Documents>
         <Doc>
           <Name>..\BSP\data.c</Name>
-          <ColumnNumber>27</ColumnNumber>
-          <TopLine>34</TopLine>
-          <CurrentLine>48</CurrentLine>
+          <ColumnNumber>10</ColumnNumber>
+          <TopLine>46</TopLine>
+          <CurrentLine>70</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\stm32f10x_it.c</Name>
@@ -2458,15 +2458,15 @@
         </Doc>
         <Doc>
           <Name>..\APP\app.c</Name>
-          <ColumnNumber>20</ColumnNumber>
-          <TopLine>182</TopLine>
-          <CurrentLine>198</CurrentLine>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>167</TopLine>
+          <CurrentLine>180</CurrentLine>
         </Doc>
         <Doc>
           <Name>..\APP\myConfig.h</Name>
-          <ColumnNumber>18</ColumnNumber>
+          <ColumnNumber>59</ColumnNumber>
           <TopLine>30</TopLine>
-          <CurrentLine>43</CurrentLine>
+          <CurrentLine>50</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\main.c</Name>

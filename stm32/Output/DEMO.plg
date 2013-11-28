@@ -4,7 +4,7 @@
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
 F:\GitHub\transSysPro\stm32\USER\STM32-DEMO.uvproj
-Project File Date:  11/24/2013
+Project File Date:  11/27/2013
 
 <h2>Output:</h2>
 Build target 'stm32'
@@ -46,6 +46,6 @@ assembling os_cpu_a.asm...
 compiling os_cpu_c.c...
 compiling os_dbg.c...
 linking...
-Program Size: Code=19064 RO-data=536 RW-data=688 ZI-data=7144  
+Program Size: Code=19256 RO-data=536 RW-data=756 ZI-data=7148  
 FromELF: creating hex file...
 "..\Output\DEMO.axf" - 0 Error(s), 0 Warning(s).

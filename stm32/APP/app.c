@@ -85,12 +85,40 @@ void Task_USART1(void *p_arg)
 //		u16 i;
 		
 //		printf("等待A8");
-
+		/* car1经过 */
 		OSSemPend(key_SEM,0,&errkey);
 
 		//将car1数据保存至buffer并串口输出
 		weight = (char*)OSMboxPend(adc_MBOX,0,&err);		
 		save_in_buffer(car1,*weight);
+		
+		/* 读写EEPROM */	
+	  	//将I2c_Buf_Write中顺序递增的数据写入EERPOM中 
+		I2C_EE_BufferWrite((u8 *)sendData, EEP_Firstpage, 256);
+			 
+		OSTimeDlyHMSM(0,0,0,500);
+
+
+		/* car2经过 */
+		OSSemPend(key_SEM,0,&errkey);
+
+		//将car1数据保存至buffer并串口输出
+		weight = (char*)OSMboxPend(adc_MBOX,0,&err);		
+		save_in_buffer(car2,*weight);
+		
+		/* 读写EEPROM */	
+	  	//将I2c_Buf_Write中顺序递增的数据写入EERPOM中 
+		I2C_EE_BufferWrite((u8 *)sendData, EEP_Firstpage, 256);
+			 
+		OSTimeDlyHMSM(0,0,0,500);
+
+		
+		/* car3经过 */
+		OSSemPend(key_SEM,0,&errkey);
+
+		//将car1数据保存至buffer并串口输出
+		weight = (char*)OSMboxPend(adc_MBOX,0,&err);		
+		save_in_buffer(car3,*weight);
 		
 		/* 读写EEPROM */	
 	  	//将I2c_Buf_Write中顺序递增的数据写入EERPOM中 

@@ -525,6 +525,11 @@
               <FileType>1</FileType>
               <FilePath>..\BSP\data.c</FilePath>
             </File>
+            <File>
+              <FileName>verify.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\verify.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

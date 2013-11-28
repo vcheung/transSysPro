@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'workwidget.h'
 **
-** Created: Wed Nov 27 09:45:50 2013
+** Created: Wed Nov 27 20:54:46 2013
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.7.0)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,7 +23,7 @@ static const uint qt_meta_data_workwidget[] = {
        5,       // revision
        0,       // classname
        0,    0, // classinfo
-       6,   14, // methods
+       7,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -37,8 +37,9 @@ static const uint qt_meta_data_workwidget[] = {
  // slots: signature, parameters, type, tag, flags
       51,   11,   11,   11, 0x0a,
       64,   11,   11,   11, 0x0a,
-      81,   11,   11,   11, 0x08,
-     105,   11,   11,   11, 0x08,
+      81,   11,   11,   11, 0x0a,
+      92,   11,   11,   11, 0x08,
+     116,   11,   11,   11, 0x08,
 
        0        // eod
 };
@@ -46,8 +47,8 @@ static const uint qt_meta_data_workwidget[] = {
 static const char qt_meta_stringdata_workwidget[] = {
     "workwidget\0\0switchToManSignal()\0"
     "updateShowSignal()\0updatetime()\0"
-    "updateShowSlot()\0on_returnWork_clicked()\0"
-    "on_quit_clicked()\0"
+    "updateShowSlot()\0showList()\0"
+    "on_returnWork_clicked()\0on_quit_clicked()\0"
 };
 
 const QMetaObject workwidget::staticMetaObject = {
@@ -83,11 +84,12 @@ int workwidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         case 1: updateShowSignal(); break;
         case 2: updatetime(); break;
         case 3: updateShowSlot(); break;
-        case 4: on_returnWork_clicked(); break;
-        case 5: on_quit_clicked(); break;
+        case 4: showList(); break;
+        case 5: on_returnWork_clicked(); break;
+        case 6: on_quit_clicked(); break;
         default: ;
         }
-        _id -= 6;
+        _id -= 7;
     }
     return _id;
 }

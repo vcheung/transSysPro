@@ -98,14 +98,14 @@ void Widget::serialManage()
         if(pSer_Com == NULL)
             return;
         if(!pSer_Com->Initcom(ComDataArriveOK,"COM2",
-                              BAUD115200,DATA_8,PAR_NONE,STOP_1,200))
+                              BAUD115200,DATA_8,PAR_NONE,STOP_1,100))
             qDebug()<<"COM open fail!";
         else
         {
             qDebug()<<"serial suceess";
-            QTimer *TimerSerData = new QTimer;
-            TimerSerData->start(5000);
+            QTimer *TimerSerData = new QTimer;            
             connect(TimerSerData,SIGNAL(timeout()),this,SLOT(SendModDataSlot()));
+            TimerSerData->start(5000);
         }
     }
 }
@@ -128,7 +128,7 @@ void Widget::ComDataArriveOK(char *DataBuff,ulong m_ulen)
         memcpy(mData.DataBuff,DataBuff,m_ulen);
         mData.Len=m_ulen;
         PutDataIntoQueuen(&mData);
-        qDebug()<<"put into buffer";
+//        qDebug()<<"put into buffer";
     }
 }
 

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'workwidget.ui'
 **
-** Created: Wed Nov 27 09:45:18 2013
+** Created: Wed Nov 27 13:11:02 2013
 **      by: Qt User Interface Compiler version 4.7.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -17,6 +17,7 @@
 #include <QtGui/QGroupBox>
 #include <QtGui/QHeaderView>
 #include <QtGui/QLabel>
+#include <QtGui/QListWidget>
 #include <QtGui/QPushButton>
 #include <QtGui/QWidget>
 
@@ -42,6 +43,7 @@ public:
     QLabel *name;
     QLabel *ID;
     QLabel *ADWeight;
+    QListWidget *listWidget;
     QPushButton *quit;
 
     void setupUi(QWidget *workwidget)
@@ -470,8 +472,8 @@ public:
         carID->setPalette(palette5);
         carID->setFont(font3);
         carID->setAutoFillBackground(true);
-        carID->setFrameShape(QFrame::Panel);
-        carID->setFrameShadow(QFrame::Raised);
+        carID->setFrameShape(QFrame::NoFrame);
+        carID->setFrameShadow(QFrame::Plain);
         carID->setScaledContents(false);
         carID->setAlignment(Qt::AlignCenter);
         carID->setWordWrap(false);
@@ -530,8 +532,8 @@ public:
         stWeight->setPalette(palette6);
         stWeight->setFont(font3);
         stWeight->setAutoFillBackground(true);
-        stWeight->setFrameShape(QFrame::Panel);
-        stWeight->setFrameShadow(QFrame::Raised);
+        stWeight->setFrameShape(QFrame::NoFrame);
+        stWeight->setFrameShadow(QFrame::Plain);
         stWeight->setScaledContents(false);
         stWeight->setAlignment(Qt::AlignCenter);
         stWeight->setWordWrap(false);
@@ -590,8 +592,8 @@ public:
         name->setPalette(palette7);
         name->setFont(font3);
         name->setAutoFillBackground(true);
-        name->setFrameShape(QFrame::Panel);
-        name->setFrameShadow(QFrame::Raised);
+        name->setFrameShape(QFrame::NoFrame);
+        name->setFrameShadow(QFrame::Plain);
         name->setScaledContents(false);
         name->setAlignment(Qt::AlignCenter);
         name->setWordWrap(false);
@@ -650,8 +652,8 @@ public:
         ID->setPalette(palette8);
         ID->setFont(font3);
         ID->setAutoFillBackground(true);
-        ID->setFrameShape(QFrame::Panel);
-        ID->setFrameShadow(QFrame::Raised);
+        ID->setFrameShape(QFrame::NoFrame);
+        ID->setFrameShadow(QFrame::Plain);
         ID->setScaledContents(false);
         ID->setAlignment(Qt::AlignCenter);
         ID->setWordWrap(false);
@@ -710,7 +712,7 @@ public:
         ADWeight->setPalette(palette9);
         ADWeight->setFont(font3);
         ADWeight->setAutoFillBackground(true);
-        ADWeight->setFrameShape(QFrame::Panel);
+        ADWeight->setFrameShape(QFrame::NoFrame);
         ADWeight->setFrameShadow(QFrame::Raised);
         ADWeight->setScaledContents(false);
         ADWeight->setAlignment(Qt::AlignCenter);
@@ -718,6 +720,9 @@ public:
         ADWeight->setIndent(3);
         ADWeight->setOpenExternalLinks(true);
         ADWeight->setTextInteractionFlags(Qt::NoTextInteraction);
+        listWidget = new QListWidget(carDis);
+        listWidget->setObjectName(QString::fromUtf8("listWidget"));
+        listWidget->setGeometry(QRect(0, 69, 550, 221));
         quit = new QPushButton(workwidget);
         quit->setObjectName(QString::fromUtf8("quit"));
         quit->setGeometry(QRect(0, 350, 130, 40));

@@ -5,6 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
+QT       += xml
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -21,7 +22,8 @@ SOURCES += main.cpp\
     qextserialbase.cpp \
     serial.cpp \
     dowithserdata.cpp \
-    win_qextserialport.cpp
+    win_qextserialport.cpp \
+    xmlfile.cpp
 
 HEADERS  += widget.h \
     workwidget.h \
@@ -32,7 +34,8 @@ HEADERS  += widget.h \
     qextserialbase.h \
     serial.h \
     dowithserdata.h \
-    win_qextserialport.h
+    win_qextserialport.h \
+    xmlfile.h
 
 FORMS    += widget.ui \
     workwidget.ui \

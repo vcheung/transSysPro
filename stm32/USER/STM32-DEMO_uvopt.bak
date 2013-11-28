@@ -408,10 +408,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>13</ColumnNumber>
+      <ColumnNumber>7</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>78</TopLine>
-      <CurrentLine>93</CurrentLine>
+      <TopLine>138</TopLine>
+      <CurrentLine>152</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\APP\app.c</PathWithFileName>
       <FilenameWithoutPath>app.c</FilenameWithoutPath>
@@ -527,10 +527,10 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>22</ColumnNumber>
+      <ColumnNumber>13</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>31</TopLine>
-      <CurrentLine>31</CurrentLine>
+      <TopLine>46</TopLine>
+      <CurrentLine>67</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\BSP\data.c</PathWithFileName>
       <FilenameWithoutPath>data.c</FilenameWithoutPath>
@@ -750,7 +750,7 @@
   <AlienFiles>
     <PathWithFilename>F:\GitHub\transSysPro\stm32\BSP\data.h</PathWithFilename>
     <TopLine>1</TopLine>
-    <CurrentLine>21</CurrentLine>
+    <CurrentLine>15</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -2446,9 +2446,9 @@
       <Documents>
         <Doc>
           <Name>..\BSP\data.c</Name>
-          <ColumnNumber>22</ColumnNumber>
-          <TopLine>31</TopLine>
-          <CurrentLine>31</CurrentLine>
+          <ColumnNumber>13</ColumnNumber>
+          <TopLine>46</TopLine>
+          <CurrentLine>67</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\stm32f10x_it.c</Name>
@@ -2458,9 +2458,9 @@
         </Doc>
         <Doc>
           <Name>..\APP\app.c</Name>
-          <ColumnNumber>13</ColumnNumber>
-          <TopLine>78</TopLine>
-          <CurrentLine>93</CurrentLine>
+          <ColumnNumber>7</ColumnNumber>
+          <TopLine>138</TopLine>
+          <CurrentLine>152</CurrentLine>
         </Doc>
         <Doc>
           <Name>..\APP\myConfig.h</Name>
@@ -2488,9 +2488,9 @@
         </Doc>
         <Doc>
           <Name>..\BSP\data.h</Name>
-          <ColumnNumber>0</ColumnNumber>
+          <ColumnNumber>14</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>21</CurrentLine>
+          <CurrentLine>15</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>

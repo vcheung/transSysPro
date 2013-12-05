@@ -196,7 +196,7 @@
 
   <Group>
     <GroupName>USER</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <File>
@@ -205,10 +205,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>10</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>18</TopLine>
-      <CurrentLine>18</CurrentLine>
+      <CurrentLine>27</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -219,10 +219,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>21</ColumnNumber>
+      <ColumnNumber>36</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>178</TopLine>
-      <CurrentLine>194</CurrentLine>
+      <TopLine>100</TopLine>
+      <CurrentLine>100</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\stm32f10x_it.c</PathWithFileName>
       <FilenameWithoutPath>stm32f10x_it.c</FilenameWithoutPath>
@@ -231,7 +231,7 @@
 
   <Group>
     <GroupName>FWlib</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <File>
@@ -268,10 +268,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>74</ColumnNumber>
+      <ColumnNumber>19</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>586</TopLine>
+      <CurrentLine>592</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\FWlib\src\stm32f10x_usart.c</PathWithFileName>
       <FilenameWithoutPath>stm32f10x_usart.c</FilenameWithoutPath>
@@ -364,7 +364,7 @@
 
   <Group>
     <GroupName>CMSIS</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <File>
@@ -399,7 +399,7 @@
 
   <Group>
     <GroupName>APP</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <File>
@@ -408,10 +408,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>9</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>167</TopLine>
-      <CurrentLine>180</CurrentLine>
+      <TopLine>234</TopLine>
+      <CurrentLine>255</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\APP\app.c</PathWithFileName>
       <FilenameWithoutPath>app.c</FilenameWithoutPath>
@@ -420,7 +420,7 @@
 
   <Group>
     <GroupName>BSP</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <File>
@@ -457,10 +457,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>58</ColumnNumber>
+      <ColumnNumber>25</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>32</TopLine>
+      <CurrentLine>51</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\BSP\usart1.c</PathWithFileName>
       <FilenameWithoutPath>usart1.c</FilenameWithoutPath>
@@ -525,12 +525,12 @@
       <GroupNumber>6</GroupNumber>
       <FileNumber>23</FileNumber>
       <FileType>1</FileType>
-      <tvExp>1</tvExp>
+      <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>10</ColumnNumber>
+      <ColumnNumber>5</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>46</TopLine>
-      <CurrentLine>70</CurrentLine>
+      <TopLine>48</TopLine>
+      <CurrentLine>64</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\BSP\data.c</PathWithFileName>
       <FilenameWithoutPath>data.c</FilenameWithoutPath>
@@ -748,6 +748,32 @@
   </Group>
 
   <AlienFiles>
+    <PathWithFilename>F:\GitHub\transSysPro\stm32\uCOS-II\Source\ucos_ii.h</PathWithFilename>
+    <TopLine>1166</TopLine>
+    <CurrentLine>1172</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
+
+  <AlienFiles>
     <PathWithFilename>F:\GitHub\transSysPro\stm32\BSP\data.h</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>16</CurrentLine>
@@ -802,7 +828,7 @@
   <AlienFiles>
     <PathWithFilename>F:\GitHub\transSysPro\stm32\APP\app_cfg.h</PathWithFilename>
     <TopLine>1</TopLine>
-    <CurrentLine>22</CurrentLine>
+    <CurrentLine>6</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -827,8 +853,8 @@
 
   <AlienFiles>
     <PathWithFilename>F:\GitHub\transSysPro\stm32\APP\myConfig.h</PathWithFilename>
-    <TopLine>30</TopLine>
-    <CurrentLine>50</CurrentLine>
+    <TopLine>34</TopLine>
+    <CurrentLine>46</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -2446,39 +2472,39 @@
       <Documents>
         <Doc>
           <Name>..\BSP\data.c</Name>
-          <ColumnNumber>10</ColumnNumber>
-          <TopLine>46</TopLine>
-          <CurrentLine>70</CurrentLine>
+          <ColumnNumber>5</ColumnNumber>
+          <TopLine>48</TopLine>
+          <CurrentLine>64</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\stm32f10x_it.c</Name>
-          <ColumnNumber>21</ColumnNumber>
-          <TopLine>178</TopLine>
-          <CurrentLine>194</CurrentLine>
+          <ColumnNumber>36</ColumnNumber>
+          <TopLine>100</TopLine>
+          <CurrentLine>100</CurrentLine>
         </Doc>
         <Doc>
           <Name>..\APP\app.c</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>167</TopLine>
-          <CurrentLine>180</CurrentLine>
+          <ColumnNumber>9</ColumnNumber>
+          <TopLine>234</TopLine>
+          <CurrentLine>255</CurrentLine>
         </Doc>
         <Doc>
           <Name>..\APP\myConfig.h</Name>
-          <ColumnNumber>59</ColumnNumber>
-          <TopLine>30</TopLine>
-          <CurrentLine>50</CurrentLine>
+          <ColumnNumber>13</ColumnNumber>
+          <TopLine>34</TopLine>
+          <CurrentLine>46</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\main.c</Name>
-          <ColumnNumber>0</ColumnNumber>
+          <ColumnNumber>10</ColumnNumber>
           <TopLine>18</TopLine>
-          <CurrentLine>18</CurrentLine>
+          <CurrentLine>27</CurrentLine>
         </Doc>
         <Doc>
           <Name>..\APP\app_cfg.h</Name>
           <ColumnNumber>8</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>22</CurrentLine>
+          <CurrentLine>6</CurrentLine>
         </Doc>
         <Doc>
           <Name>..\APP\app.h</Name>
@@ -2491,6 +2517,24 @@
           <ColumnNumber>14</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>16</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\BSP\usart1.c</Name>
+          <ColumnNumber>25</ColumnNumber>
+          <TopLine>32</TopLine>
+          <CurrentLine>51</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\FWlib\src\stm32f10x_usart.c</Name>
+          <ColumnNumber>19</ColumnNumber>
+          <TopLine>586</TopLine>
+          <CurrentLine>592</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\uCOS-II\Source\ucos_ii.h</Name>
+          <ColumnNumber>14</ColumnNumber>
+          <TopLine>1166</TopLine>
+          <CurrentLine>1172</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>

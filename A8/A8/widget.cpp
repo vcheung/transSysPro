@@ -13,7 +13,7 @@ Widget::Widget(QWidget *parent) :
     ui(new Ui::Widget)
 {
     ui->setupUi(this);
-    this->move(100,0);
+    this->move(0,0);
     this->setWindowFlags(Qt::FramelessWindowHint);
     setFixedSize(800,480);
 
@@ -105,7 +105,7 @@ void Widget::serialManage()
             qDebug()<<"serial suceess";
             QTimer *TimerSerData = new QTimer;            
             connect(TimerSerData,SIGNAL(timeout()),this,SLOT(SendModDataSlot()));
-            TimerSerData->start(300);
+            TimerSerData->start(5000);
         }
     }
 }

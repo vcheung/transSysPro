@@ -179,7 +179,7 @@ void Task_A8CONNECT(void *p_arg)
 //			printf("OK!886");
 			replyA8();
 		}		
-		OSTimeDlyHMSM(0,0,0,100);
+		OSTimeDlyHMSM(0,0,0,500);
 	}
 }
 
